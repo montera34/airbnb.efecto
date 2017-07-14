@@ -5,7 +5,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Efecto Airnbnb en Donostia. v2.0</title>
+<title>Efecto Airnbnb en Donostia</title>
 
 <!-- Fonts -->
 <link href="../fonts/style.css" rel="stylesheet">
@@ -98,19 +98,59 @@
 </div>
 
 <main class="container">
-	<div id="taller" class="row vis-item">
+	<div id="0" class="row vis-item">
 		<div class="col-md-6 intro">
 			<figure><img class="img-responsive" src="images/intro.1.jpg" alt="Taller El efecto Airbnb en datos" /></figure>
 			<h4>El taller</h4>
-			<p>Este segunda versión del informe está basada en los análisis producidos colaborativamente durante el taller <a href="https://montera34.com/project/efecto-airbnb-donostia/">Maps&data: El efecto Airbnb en datos</a> en abril de 2017 que produjeron el <a href="informe-airbnb-donostia-v1.0.hml">informe versión 1.0</a>. Se han actualizado las visualizaciones con los nuevos datos obtenidos. Se han añadido nuevas secciones.</p>
-			<p>El taller desarrollado en Hirikilabs< trata de dar visibilidad y objetividad al efecto de la presencia de alojamientos de Airbnb en las capitales vascas y su relación con la situación inmobiliaria de cada una de ellas. El colectivo <a href="https://montera34.com">Montera34</a> propone un ejercicio sobre un caso real y local. </p>
-			<p>Participaron en el taller de abril 2017 y en la producción de este informe: Maria Agirre, Joseba Egia, Miren Izagirre, Garikoitz Muñoz, Álvaro Rodríguez, Arantza Santesteban, Aritz Zabaleta, Ibai Zabaleta, Arantxa Zabalza, Sabin Zubiri. En el taller durante Summerlab'17 han participado: xxx.</p>
+			<p>Los análisis disponibles en esta página han sido producidos colaborativamente durante el taller <a href="https://montera34.com/project/efecto-airbnb-donostia/">Maps&data: El efecto Airbnb en datos</a> los días 3, 4 y 5 de abril de 2017.</p>
+			<p>El taller desarrollado en <a href="https://www.tabakalera.eu/es/mapas-airbnb-en-datos-san-sebastian-bilbao-vitoria">Hirikilabs</a> trata de dar visibilidad y objetividad al efecto de la presencia de alojamientos de Airbnb en las capitales vascas y su relación con la situación inmobiliaria de cada una de ellas. El colectivo <a href="https://montera34.com">Montera34</a> propone un ejercicio sobre un caso real y local. Además colabora <a href="https://twitter.com/sitoveracruz">Sito Veracruz</a> de <a href="http://www.fairbnb.coop/">FairBnB</a>, una red ciudadana que está trabajando en una alternativa a Airbnb gobernada y propiedad de sus usuarios, enfocada a disminuir el efecto negativo del alquiler vacacional en las comunidades, y respetuosa con las ciudades en las que funciona.</p>
+			<p>Han participado en este taller y en la producción de este informe: Maria Agirre, Joseba Egia, Miren Izagirre, Garikoitz Muñoz, Álvaro Rodríguez, Arantza Santesteban, Aritz Zabaleta, Ibai Zabaleta, Arantxa Zabalza, Sabin Zubiri.</p>
 		</div>
 		<div class="col-md-6 intro">
 			<figure><img class="img-responsive" src="images/intro.2.jpg" alt="Vista parcial de un mapa con los alojamientos Airbnb de Donosti" /></figure>
 			<h4>Los datos</h4>
-			<p>Los datos que se usan para este informe provienen de la remezcla de dos bases de datos: gracias al trabajo de <a href="http://www.murraycox.com/">Murray Cox</a> de <a href="http://insideairbnb.org/">Inside Airbnb</a> (24-3-2017); y de <a href="http://www.saigesp.es/">Santi Espinosa</a> (1-4-2017). Se ha realizado la mezcla de las dos bases de datso con <a href="https://github.com/montera34/airbnbeuskadi/blob/master/analisis/montera34/compare-datasets.Rmd"/>este script de R</a> (<a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">listings_donostia_merged.csv</a>). Se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y vivienda de Donostia. También puedes consultar el mapa de <a href="http://insideairbnb.com/euskadi/">InsideAirbnb Euskadi</a>.</p>
-			<p>En abril de 2017, la base de datos que utilizamos de InsideAirbnb contenía 1.219 anuncios para Donostia, tras la remezcla de las dos bases de datos tenemos 1.829 anuncios. </p>
+			<p>Los datos de Airbnb de Euskadi están disponibles gracias al trabajo de <a href="http://www.murraycox.com/">Murray Cox</a> de <a href="http://insideairbnb.org/">Inside Airbnb</a>. Se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y vivienda de Donostia. También puedes consultar el mapa de <a href="http://insideairbnb.com/euskadi/">InsideAirbnb Euskadi</a>.</p>
+			<p>En abril de 2017, la base de datos de Euskadi de InsideAirbnb contiene 2.874 anuncios en 266 municipios, de ellos 395 tienen licencia de alojamiento turístico (13.6%). En las capitales tenemos:</p>
+			<div class="table-responsive">
+				<table class="table table-condensed table-hover text-right">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Anuncios</th>
+							<th>Con licencia</th>
+							<th>Plazas</th>
+							<th>Anfitriones</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td colspan="5">Datos de Airbnb en Euskadi, en abril de 2017.</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<th scope="row">Donostia - San Sebastián</th>
+							<td>1.219 (42%)</td>
+							<td>160 (13%)</td>
+							<td>4.553</td>
+							<td>696</td>
+						</tr>
+						<tr>
+							<th scope="row">Bilbao</th>
+							<td>459 (16%)</td>
+							<td>74 (16%)</td>
+							<td>1.484</td>
+							<td>367</td>
+						</tr>
+						<tr>
+							<th scope="row">Vitoria</th>
+							<td>107 (4%)</td>
+							<td>27 (25%)</td>
+							<td>361</td>
+							<td>79</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
