@@ -11,6 +11,9 @@ h1 {
 .spacetop {
 	margin-top: 7px;
 }
+.bigspacetop {
+	margin-top: 25px;
+}
 #top-navbar {
 	font-weight: bold;
 	text-transform: uppercase;

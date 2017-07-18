@@ -53,15 +53,13 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="http://lab.montera34.com/airbnb/donostia">Efecto Airbnb</a>
+			<a class="navbar-brand" href="/airbnb/summerlab17">Efecto Airbnb</a>
 		</div>
 		<div class="collapse navbar-collapse" id="top-navbar-collapse">
 			<ul class="nav navbar-nav nabvar-left">
-				<li><a href="#0">Summerlab'17</a></li>
-				<li><a href="#1">Informes previos</a></li>
-				<li><a href="#2">Datos</a></li>
-				<li class="highlighted"><a href="#4">Visualizaciones</a></li>
-				<li><a href="#5">Participa y colabora</a></li>
+				<li><a href="#1">Procedencia visitantes</a></li>
+				<li><a href="#2">Data Hippo</a></li>
+				<li><a href="#3">Análisis por palabras</a></li>
 			</ul>
 		</div>
 	</div>
@@ -84,10 +82,12 @@
 	<div id="taller" class="row vis-item">
 		<h3 class="col-md-12">Nodo datacommons en el SummerLab’17</h3>
 		<div class="col-md-6 intro">
+			<figure><img class="img-responsive" src="images/summerlab17-nodo.datacommons.efecto.airbnb.presentaciones.jpg" alt="Summerlab 17. Nodo datacommons. Efecto Airbnb. Presentaciones" /></figure>
 			<p>Desde <a href="https://montera34.com/">Montera34</a> coordinamos los días 13 y 14 de julio de 2017 el nodo Data commons dentro del encuentro <a href="https://www.tabakalera.eu/es/summerlab-iniciativas-ciudadanas-tecnologias-sociales">SummerLab'17</a> en Donostia que organiza Hirikilabs. Estuvo centrado en el efecto de Airbnb en Donostia.</p>
 			<p>El encuentro se plateó como un espacio de encuentro para intercambiar experiencias con colectivos y personas que estaban trabajando con los datos de Airbnb y otras plataformas de alojamientos turísticos en distintas partes del Estado, con la idea de compartir metodologías, herramientas, motivaciones y necesidades, e imaginar maneras y espacios para seguir trabajando juntas.</p>
 		</div>
 		<div class="col-md-6 intro">
+			<figure><img class="img-responsive" src="images/summerlab17-nodo.datacommons.efecto.airbnb.taller.jpg" alt="Summerlab 17. Nodo datacommons. Efecto Airbnb. Taller" /></figure>
 			<p>Asistieron, desde diferentes lugares del Estado, para compartir sus investigaciones sobre Airbnb <a href="https://terraferida.cat/">Terraferida</a> (Mallorca), <a href="http://aparture.com/">Aparture</a> (Euskadi), <a href="http://dinsairbnb.cat/">Dinsairbnb</a> (Mallorca) y <a href="http://www.saigesp.es/">Santiago Espinosa</a> (Barcelona).</p>
 			<p>Se puede consultar y descargar cada una de las <a href="https://montera34.com/project/efecto-airbnb-donostia/efecto-airbnb-summerlab17/">presentaciones hechas por los invitados y el vídeo completo</a>.</p>
 			<p>En el taller del Summerlab'17 participaron Margalida Mestre, Asier Pereda, Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel Angel Mayol, Jesus Herrero, Ion Etxabe Gutiérrez, Ana Arranz y Ana Agirre.</p>
@@ -96,27 +96,36 @@
 
 	<section id="1" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Procedencia de los usuarios</h2>
+			<h2 class="col-md-8">Procedencia de los usuarios de Airbnb en Donostia</h2>
 		</header>
 		<div class="row vis-body">
-			<div class="col-md-5">
-				<p></p>
+			<div class="col-md-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" frameborder="0" src="https://anarranz.carto.com/builder/1279fcfb-be62-414b-938f-e8b4fcc04432/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/13k3DNhzn6AaF0j3MdgvPC1qc5avIKGqW0gxUcNqSAhk/pubchart?oid=1183471116&amp;format=interactive"></iframe>
+				</div>
+			</div>
+
+			<div class="col-md-6 bigspacetop">
+				<p>El ejercicio ha consistido en hacer una pequeña aproximación a la procedencia de las personas que visitan Donostia-San Sebastián a través de la plataforma Airbnb. A pesar de que la muestra con la que se ha conseguido trabajar es parcial y poco representativa, la metodología desarrollada puede ser la base para futuros análisis en este sentido, pudiendo obtener información de interés sobre:</p>
+				<ul>
+					<li>procedencia de las visitas.</li>
+					<li>repetición de visitas a la ciudad por parte de las mismas personas.</li>
+					<li>utilización de un mismo alojamiento por parte de diferentes personas de un mismo país.</li>
+				</ul>
+				<p>La automatización del procedimiento nos ha permitido obtener la información de forma más rápida, pero, para detectar errores y conocer los matices de la información que trabajamos, con el proceso manual hemos podido detectar abreviaturas, entre otros formatos, pudiendo corregir más fácilmente errores. Tal vez con un conocimiento más avanzado en la utilización de los diferentes programas podríamos conseguir lo mismo de forma aún más ràpida.</p>
+				<p><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFDe-d%C3%B3nde-vienen-los-usuarios-de-Airbnb%3F">Documentación y metodología</a></p>
+				<p class="spacetop"><strong>Preguntas pendientes</strong>. ¿Cuántos repiten visita a Donostia? ¿Cuántos inquilinos del mismo país de procedencia repiten alojamiento?</p>
 			</div>
 		</div>
 	</section>
 
 	<section id="2" class="vis-item">
-		<header class="row vis-head">
-			<h2 class="col-md-6">Asier</h2>
-		</header>
-		<div class="row vis-body">
-			<div class="col-md-5">
-
-			</div>
-		</div>
-	</section>
-
-	<section id="3" class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-8">Data hippo</h2>
 		</header>
@@ -140,10 +149,11 @@
 		</div>
 	</section>
 
-	<section id="4" class="vis-item">
+	<section id="3" class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-6">Análisis de los anuncios por palabras</h2>
-			<p class="col-md-6">Para poder analizar la frecuencia con la que aparecen las palabras usadas en los anuncios de AirBnB, se ha seguido la <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">metodología descrita en la wiki del taller</a>. Se ha hecho el análisis para Donostia y otras tres grandes capitales turísticas, Madrid, Barcelona y Mallorca, para poder comparar.</p>
+			<p class="col-md-4">Para poder analizar la frecuencia con la que aparecen las palabras usadas en los anuncios de AirBnB, se ha seguido la <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">metodología descrita en la wiki del taller</a>. Se ha hecho el análisis para Donostia y otras tres grandes capitales turísticas, Madrid, Barcelona y Mallorca, para poder comparar.</p>
+			<p class="col-md-2"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">Documentación y metodología</a></p>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-6">
@@ -178,22 +188,6 @@
 				<div class="embed-responsive embed-responsive-4by3">
 					<iframe class="embed-responsive-item" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/13Aaz8NZNLeqcT9jn-UFKSp29D91jmjR1DJA9Dm8CyfU/pubchart?oid=300050216&amp;format=interactive"></iframe>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="4" class="vis-item">
-		<header class="row vis-head">
-			<h2 class="col-md-6">Barrios</h2>
-		</header>
-		<div class="row vis-body">
-			<div class="col-md-3">
-			</div>
-			<div class="col-md-3">
-			</div>
-			<div class="col-md-3">
-			</div>
-			<div class="col-md-3">
 			</div>
 		</div>
 	</section>
