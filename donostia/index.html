@@ -84,35 +84,30 @@
 	</div>
 </div>
 
-<div class="container-fluid jumbotron" style="height:900px;background-color:#fd5;>
-	<div class="col-md-12">
-		<div">
-			<div class="col-md-6"><img src="../images/efecto-airbnb-summerlab-01_p.png" class="img-responsive" alt="cartel Efecto Airbnb en Summelab'17"></div>
-			<div class="col-md-6"></div>
-			<h2>Efecto Airbnb en Summerlab'17. <small>Donosti 13-14 julio 2017</small></h2>
-			<p>Si quieres participar en el siguiente encuentro de Efecto Airbnb apúntate al Summmerlab'17.</p>
-			<p>Desde <a href="https://montera34.com/">Montera34</a> estamos coordinando para los días 13 y 14 de julio el nodo de Data commons dentro del encuentro <a href="https://www.tabakalera.eu/es/summerlab-iniciativas-ciudadanas-tecnologias-sociales">SummerLab’17</a> en Donostia que organiza Hirikilabs. Estará centrado en el efecto de Airbnb en Donostia pero también en aprender colaborativamente de diferentes experiencias que estudian el impacto de esta plataforma.</p>
-			<p><a class="btn btn-primary btn-lg" href="https://lab.montera34.com/airbnb/#0" role="button">Toda la info</a></p>
-		</div>
-	</div>
-</div>
-
 <main class="container">
 	<div id="taller" class="row vis-item">
 		<div class="col-md-6 intro">
 			<figure><img class="img-responsive" src="images/intro.1.jpg" alt="Taller El efecto Airbnb en datos" /></figure>
-			<h4>El taller</h4>
-			<p>Este segunda versión del informe está basada en los análisis producidos colaborativamente durante el taller <a href="https://montera34.com/project/efecto-airbnb-donostia/">Maps&data: El efecto Airbnb en datos</a> en abril de 2017 que produjeron el <a href="informe-airbnb-donostia-v1.0.hml">informe versión 1.0</a>. Se han actualizado las visualizaciones con los nuevos datos obtenidos. Se han añadido nuevas secciones.</p>
-			<p>El taller desarrollado en Hirikilabs< trata de dar visibilidad y objetividad al efecto de la presencia de alojamientos de Airbnb en las capitales vascas y su relación con la situación inmobiliaria de cada una de ellas. El colectivo <a href="https://montera34.com">Montera34</a> propone un ejercicio sobre un caso real y local. </p>
+			<h3>¿De dónde sale este informe?</h3>
+			<p>Este segunda versión del informe está basada en los análisis producidos colaborativamente durante el taller <a href="https://montera34.com/project/efecto-airbnb-donostia/">Maps&data: El efecto Airbnb en datos</a> en abril de 2017 que produjeron el <a href="informe-airbnb-donostia-v1.0.hml">informe Efecto Airbnb Donostia versión 1.0</a>. Se han actualizado las visualizaciones con los nuevos datos obtenidos. Se han añadido nuevas secciones.</p>
+			<p>El taller desarrollado en Hirikilabs analizaba y visualizaba los datos de los que se disponía para aportar al debate sobre al efecto de la presencia de alojamientos de Airbnb en las capitales vascas y su relación con la situación inmobiliaria de cada una de ellas. El colectivo <a href="https://montera34.com">Montera34</a> propone un ejercicio sobre un caso real y local.</p>
 			<p>Participaron en el taller de abril 2017 y en la producción de este informe: Maria Agirre, Joseba Egia, Miren Izagirre, Garikoitz Muñoz, Álvaro Rodríguez, Arantza Santesteban, Aritz Zabaleta, Ibai Zabaleta, Arantxa Zabalza, Sabin Zubiri. En el taller durante Summerlab'17 han participado: Margalida Mestre, Asier Pereda, 
-Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel Angel Mayol, Jesus Herrero, Ion Etxabe Gutiérrez, Ana Arranz y Ana Agirre.
+Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel Angel Mayol, Jesus Herrero, Ion Etxabe Gutiérrez, Ana Arranz y Ana Agirre. Coordinan Alfonso Sánchez Uzábal y Pablo Rey Mazón de Montera34.
 </p>
 		</div>
 		<div class="col-md-6 intro">
 			<figure><img class="img-responsive" src="images/intro.2.jpg" alt="Vista parcial de un mapa con los alojamientos Airbnb de Donosti" /></figure>
-			<h4>Los datos</h4>
-			<p>Los datos que se usan para este informe provienen de la remezcla de dos bases de datos: gracias al trabajo de <a href="http://www.murraycox.com/">Murray Cox</a> de <a href="http://insideairbnb.org/">Inside Airbnb</a> (24-3-2017); y de <a href="http://www.saigesp.es/">Santi Espinosa</a> (1-4-2017). Se ha realizado la mezcla de las dos bases de datso con <a href="https://github.com/montera34/airbnbeuskadi/blob/master/analisis/montera34/compare-datasets.Rmd"/>este script de R</a> (<a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">listings_donostia_merged.csv</a>). Se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y vivienda de Donostia. También puedes consultar el mapa de <a href="http://insideairbnb.com/euskadi/">InsideAirbnb Euskadi</a>.</p>
-			<p>En abril de 2017, la base de datos que utilizamos de InsideAirbnb contenía 1.219 anuncios para Donostia, tras la remezcla de las dos bases de datos tenemos 1.829 anuncios. </p>
+			<h3>Los datos</h3>
+			<p>Los datos que se usan para este informe provienen de la unión de dos siguientes bases de datos: 
+				<ul>
+					<li><a href="http://insideairbnb.org/euskadi">Inside Airbnb / Euskadi</a> (24-3-2017), web scraping de <a href="http://www.murraycox.com/">Murray Cox</a> (1.219 anuncios).</li> 
+					<li>API del mapa de Airnb (1-4-2017), web scraping de <a href="https://twitter.com/saigesp">Santi Espinosa</a> (1.545 anuncios).</li>
+				</ul> 
+				Se ha procedido a unir las dos bases de datos con <a href="https://github.com/montera34/airbnbeuskadi/blob/master/analisis/montera34/compare-datasets.Rmd"/>este script de R</a> (<a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">listings_donostia_merged.csv</a>), eliminando los duplicados. Tras la unión de ambas bases de datos obtenemos una de 1.829 anuncios (puedes ver <a href="https://lab.montera34.com/airbnb/process/montera34/compare-datasets_insideairbnb-vs-api-mapa_donostia.html">los resultados de la comparación de estas bases de datos</a>).</p>
+				<ul>
+					<li>Airbnb + API de mapa. Base de datos unificada (1.829 anuncios).</li> 
+				</ul> 				
+			<p>También se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y vivienda de Donostia.</p>
 			</div>
 		</div>
 	</div>
@@ -120,19 +115,23 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 	<section id="0" class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-6">Viviendas completas vs Habitaciones</h2>
+			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-5">
-				<p>Esta sección muestra todos los alojamientos de Airbnb en Donostia según el tipo de habitación que se oferte. Aproximadamente dos tercios son viviendas completas y un tercio son habitaciones privadas.</p>
+				<p>Esta sección muestra todos los alojamientos de Airbnb en Donostia según el tipo de habitación que se oferte. Aproximadamente tres cuartos son viviendas completas y un cuarto son habitaciones privadas.</p>
 			</div>
 			<div class="col-md-6">
-				<p class="vis-featured">La oferta de Airbnb en Donostia consiste en<br><span class="vis-big">819 vivivendas completas (67%)<br>392 habitaciones privadas (32%)<br>8 habitaciones compartidas</span></p>
+				<p class="vis-featured">La oferta de Airbnb en Donostia consiste en<br><span class="vis-big">1.346 vivivendas completas (74%)<br>475 habitaciones privadas (26%)<br>8 habitaciones compartidas</span></p>
 			</div>
 		</div>
 		<div class="row vis-body">
 			<div class="col-md-12">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://numeroteca.carto.com/builder/831c94e4-23b7-11e7-8cec-0ee66e2c9693/embed"></iframe>
+					<figure>
+						<iframe class="embed-responsive-item" src="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed"></iframe>
+						<figcaption><a href="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed">Mapa de viviendas completas vs habitaciones.</a></figcaption>
+					</figure>
 				</div>
 				<p>El tipo de habitación nos puede dar pistas sobre el tipo de propietario que ofrece alojamienoto. Dejamos para más adelante analizar si existe correlación entre tipo de habitación con la disponibilidad (o con el número de pernoctaciones).</p>
 			</div>
@@ -142,11 +141,12 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 	<section id="1" class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-6">Hoteles vs. Airbnb</h2>
+			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-3 col-md-push-9">
 				<p>Donostia es una ciudad con un déficit histórico de plazas hoteleras que ha provocado un elevado precio de los alojamientos hoteleros. Esto ha llevado a la corporación municipal a autorizar la construcción de nuevos hoteles que cubran esta necesidad.</p>
-				<p class="vis-featured">En Donostia hay: <br /><span class="vis-big">9.100 plazas hoteleras</span><br><span class="vis-big">4.553 plazas Airbnb</span></p>
+				<p class="vis-featured">En Donostia hay: <br /><span class="vis-big">9.100 plazas hoteleras</span><br><span class="vis-big">7.349 plazas Airbnb</span></p>
 				<p>Esta comparativa nos lleva a preguntarnos hasta qué punto son necesarias a día de hoy las nuevas 1.200 plazas hoteleras que se construirán en los próximos meses, que se sumarán a las 9.100 plazas regladas existentes (de las cuales 4.059 se corresponden a plazas hoteleras; 1.136 a plazas pensiones y 1.423 en albergues).</p>
 				<p class="vis-legend">Fuente de información: Oferta de alojamientos turísticos 2015. San Sebastián Turismo & Convention Bureau-Gobierno Vasco y <a href="http://opendata.euskadi.eus/catalogo/-/alojamientos/">Opendata Euskadi</a>.</p>
 			</div>
@@ -160,52 +160,73 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 
 	<section id="2" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-8">Alojamientos por barrio</h2>
+			<h2 class="col-md-6">Alojamientos por barrio</h2>
+			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
 		</header>
 		<div class="row vis-body">
-			<div class="col-md-5">
-				<p class="vis-featured"><span class="vis-big">8 de los 10 barrios de Euskadi con más anuncios de Airbnb por número de viviendas están en Donostia</p>
+			<div class="col-md-6 col-md-push-3">
+				<p class="vis-featured"><span class="vis-big">El 60% de los anuncios de Airbnb en Donostia están en los barrios de Centro y Gros (1.081 anuncios).</p>
 				<p>Para estudiar cómo se distribuye la oferta de Airbnb en ciudad vamos a estudiarla en relación al total de viviendas por cada barrio. En vez de mostrar y representar los números totales de anuncios de Airbnb por barrio mostramos <strong>los valores relativos respecto el total de viviendas</strong>. Esto nos permite comparar con un valor barrios de muy distintas características y densidades de viviendas.</p>
-				<p>Donostia es con diferencia la ciudad de Euskadi que más anuncios de Airbnb tiene y a la vez la que tiene mayor cantidad por total de vivienda, siendo <strong>los barrios de Igeldo, Ategorrieta-Ulia y Centro los que tienen mayores porcentajes de todo Euskadi por encima del 3%</strong>, seguidos de Miramon-Zorroaga, Gros, y Antiguo con valores en torno al 2%. Ver la comparativa completa en el <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">informe Efecto Airbnb en Euskadi</a>.</p>
-				<p>Método de conteo: se han contado puntos (anuncios) en polígonos (barrios) <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-concentra-la-oferta-por-barrios-de-Airbnb%3F">descrito en este manual</a>. Como algunos puntos han sido situados en el mar y fuera del contorno del barrio, dada la imprecisión con la que Airbnb ofrece sus datos, el número de total de anuncios en puede ser algo menor que los indicados en los totales.</p>
-			</div>	
-			<div class="col-md-7">
-				<figure><a href="http://lab.montera34.com/airbnb/euskadi/index.html#2"><img class="img-responsive" src="images/bar-chart-barrios-capitales-euskadi-por-porcentaje_crop.png" alt="Porcentaje de anuncios por viviendas en barrios capitales vascas" /></a>
-					<figcaption>Ver la comparativa completa en el <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">informe Efecto Airbnb en Euskadi</a>.</figcaption>
+				<p>Donostia es con diferencia la ciudad de Euskadi que más anuncios de Airbnb tiene y a la vez la que tiene mayor cantidad por total de vivienda, siendo <strong>los barrios de Igeldo, Centro, Ategorrieta-Ulia, Miramon-Zorroaga y Gros los que tienen mayores porcentajes de todo Euskadi por encima del 3%</strong>, seguidos de Antiguo con valores en torno al 2%.</p>
+			</div>
+		</div>
+		<div class="row vis-body">
+			<div class="col-md-10 col-md-push-1">
+				<figure><a href="images/bar-chart-barrios-donosti-por-porcentaje.png"><img class="img-responsive" src="images/bar-chart-barrios-donosti-por-porcentaje.png" alt="Porcentaje de anuncios por viviendas en barrios de Donostia" /></a>
+					<figcaption>Porcentaje y número de anuncios de Airbnb por número de viviendas por barrio.</figcaption>
 				</figure>
 			</div>
 		</div>
 		<div class="row vis-body">
-			<div class="col-md-9">
-				<div class="embed-responsive embed-responsive-16by9">
-					<!--<iframe class="embed-responsive-item" src="https://azetaekis.carto.com/viz/fa069f9c-195c-11e7-9526-0e05a8b3e3d7/embed_map"></iframe>-->
-					<iframe class="embed-responsive-item" src="https://numeroteca.carto.com/builder/afb48808-1a08-11e7-8d0e-0ecd1babdde5/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B43.287515075916865%2C-2.0446586608886723%5D%2C%22sw%22%3A%5B43.33610358593233%2C-1.9135951995849612%5D%7D%7D"></iframe>
-				</div>
-				<div>
-					<figure><a href="https://numeroteca.carto.com/builder/4699007e-1de1-11e7-89f8-0e3ebc282e83/embed"><img class="img-responsive" src="images/densidad-airbnb-donostia.png" alt="Taller El efecto Airbnb en datos" /></a></figure>
-						<figcaption><a href="https://numeroteca.carto.com/builder/4699007e-1de1-11e7-89f8-0e3ebc282e83/embed">Mapa de densidad de anuncios Airbnb por barrio.</a></figcaption>
-				</div>
+			<div class="col-md-6 col-md-push-3">
+				<p>Método de conteo: se han contado puntos (anuncios) en polígonos (barrios) <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-concentra-la-oferta-por-barrios-de-Airbnb%3F">descrito en este manual</a>. Como algunos puntos han sido situados en el mar y fuera del contorno del barrio, dada la imprecisión con la que Airbnb ofrece sus datos, el número de total de anuncios en puede ser algo menor que los indicados en los totales.</p>
 			</div>
-			<div class="col-md-3">
-				<p>Es importante reseñar que un anuncio de Airbnb no tiene por qué necesariamente corresponder con una vivienda, ya que dentro de una vivienda puede haber varias habitaciones que se oferten por separado en la web. Sin embargo creemos que la aproximación es válida para un primer acercamiento a los datos. Ver más sobre esto en el <a href="http://lab.montera34.com/airbnb/euskadi">informe Efecto Airbnb Euskadi</a>i</p>
+		</div>
+		<div class="row vis-body">
+			<div class="col-md-12">
+				<figure><a href="images/densidad-airbnb-donostia_2.png"><img class="img-responsive" src="images/densidad-airbnb-donostia_2.png" alt="Taller El efecto Airbnb en datos" /></a>
+					<figcaption><a href="https://numeroteca.carto.com/builder/9d8ae950-b22a-4809-b20b-48e6f15c0efb/embed">Mapa de densidad de anuncios Airbnb por barrio.</a></figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="row vis-body">		
+			<div class="col-md-5 col-md-push-1">
+				<p>Es importante reseñar que un anuncio de Airbnb no tiene por qué necesariamente corresponder con una vivienda, ya que dentro de una vivienda puede haber varias habitaciones que se oferten por separado en la web. Sin embargo creemos que la aproximación es válida para un primer acercamiento a los datos. Ver más sobre esto en el <a href="http://lab.montera34.com/airbnb/euskadi">informe Efecto Airbnb Euskadi</a>.</p>
+			</div>
+			<div class="col-md-2 col-md-push-2">
+				<figure><a href="http://lab.montera34.com/airbnb/euskadi/index.html#2"><img class="img-responsive" src="images/bar-chart-barrios-capitales-euskadi-por-porcentaje_crop.png" alt="Porcentaje de anuncios por viviendas en barrios capitales vascas" /></a>
+					<figcaption>Comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-2 col-md-push-2">
+				<figure><a href="http://lab.montera34.com/airbnb/euskadi/index.html#2"><figure><img src="../euskadi/images/donostia-airbnb-porcentaje.png" class="img-responsive"></figure></a>
+					<figcaption>Puedes ver la comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<div class="row vis-body">
+			<div class="col-md-9">
+				<h3>Histograma de concentración de anuncios de Airbnb por barrios</h3>
 			</div>
 		</div>
 		<div class="row vis-body">
 			<div class="col-md-9">
-				<h3>Histograma de concentración de anuncios de Airbnb por barrios</h3>
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="668" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1PCb_hccsXJBZ2iH6E5a-abIi0Zl4NOCqXS87RSWGojQ/pubchart?oid=1558568649&amp;format=interactive"></iframe>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<p>Para hacernos una idea de la distribución de densidades de anuncios de Airbnb por barrio hemos hecho un histograma con todos los valores. La gran mayoría (67) de los 89 barrios de Donostia, Bilbao y Vitoria se sitúan por debajo del 0,5% de anuncios de Airbnb respecto de las viviendas de ese barrio. Los valores por encima del 3% corresponden todos a barrios de Donostia.</p>
+				<p>Datos: Base de datos de Inside Airbnb para Euskadi.</p>
 			</div>
 		</div>
 	</section>
 
 	<section id="3" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-8">Concentración de alojamientos por anfitrión</h2>
+			<h2 class="col-md-6">Concentración de alojamientos por anfitrión</h2>
+			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-3">
@@ -218,7 +239,7 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 				<p class="vis-gradient vis-gradient-3"><strong>50 anfitriones</strong>,<br> el 11,3% del total,<br> ofrecen<br> <strong>3.656 plazas de alojamiento</strong>,<br> el 49,7%.</p>
 			</div>
 			<div class="col-md-3">
-				<p class="vis-gradient vis-gradient-4"><strong>100 anfitriones</strong>,<br> el 11,3% del total,<br> ofrecen<br> <strong>4.208 plazas de alojamiento</strong>,<br> el 57,3%.</p>
+				<p class="vis-gradient vis-gradient-4"><strong>100 anfitriones</strong>,<br> el xxx% del total,<br> ofrecen<br> <strong>4.208 plazas de alojamiento</strong>,<br> el 57,3%.</p>
 			</div>
 		</div>
 		<div class="row vis-body">
@@ -229,7 +250,7 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 		<div class="row vis-body">
 			<div class="col-md-6">
 				<p>En el gráfico inferior podemos ver quienes son los 10 anfitriones con más número de anuncios listados en Airbnb Donostia (son 11 porque están empatados dos en la posición 10). Éste pequeño número de anfitriones posee 498 alojamientos de las 1829 disponibles y el 27.2% del total de plazas de Airbnb en la ciudad.</p>
-				<p>Se puede ver una comparativa entre el número de alojamientos y de plazas que ofrecen los anfitriones Top10. FeelFree Rentals y The Rentals Collection concentran 1.019 plazas del total de 7.349 disponibles.</p>
+				<p>Se puede ver una comparativa entre el número de alojamientos y de plazas que ofrecen los anfitriones Top10. FeelFree Rentals y The Rentals Collection concentran 1.273 plazas del total de 7.349 disponibles.</p>
 				<div class="embed-responsive embed-responsive-4by3">
 					<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1504ZJ9PJhj-l1obFIczZyKMrWB_Rps9nkbjmD28mSvs/pubchart?oid=628602022&amp;format=interactive"></iframe>
 				</div>
@@ -308,23 +329,23 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 		<div class="row vis-body">
 			<div class="col-md-12">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://azetaekis.carto.com/viz/583287fc-1a1b-11e7-9f29-0e3ebc282e83/embed_map"></iframe>
+					<iframe width="100%" height="520" frameborder="0" src="https://azetaekis.carto.com/builder/5ded9784-635d-4699-ac73-7457f6e255d3/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 				</div>
 			</div>
 			<div class="col-md-6">
-				<p>En este mapa se muestra la localización de las viviendas de los anfitriones Top´10 de Donostia. Mediante diferentes colores se identifican las viviendas de cada anfitrión Top´10. En gris están indicadas el resto de las viviendas Airbnb en Donostia.</p>
+				<p>En este mapa se muestra la localización de las viviendas de los anfitriones Top 5 de Donostia. Mediante diferentes colores se identifican las viviendas de cada anfitrión Top 5. En gris están indicadas el resto de las viviendas Airbnb en Donostia. </p>
 			</div>
 		</div>
 		<div class="row vis-body">
 			<div class="col-md-6">
 				<h4>¿Cuántos anfitriones tienen 1 (o más) alojamientos?</h4>
-				<p class="vis-featured"><span class="vis-big">El 80% de anfitriones tiene solo un alojamiento.</span></p>
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1X5FOdiXV4RJSomoJ7pGXkEaZbkt_xm7vrngLMZc6t6U/pubchart?oid=1835378760&amp;format=interactive"></iframe>
-				</div>
+				<figure><a href="images/numero-anfitriones-con-1-anuncio.png"><img class="img-responsive" src="images/numero-anfitriones-con-1-anuncio.png" alt="xxx" /></a>
+					<figcaption><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdY-2STv5SyajrdVvtLowKv4Huv49ZHmV0ACmHxdLdYKN_6ka1I8MM-QjmOhl7VfA0DR71nwjgKCa8/pubchart?oid=637309093&format=interactive">Histograma de distribución de anuncios por anfitrión</a>.</figcaption>
+				</figure>
 			</div>
 			<div class="col-md-6">
-				<p>Ya hemos visto que aproximadamente un 14% de los anfitriones tienen el 2.392 plazas de alojamiento (52,5%), lo que este gráfico nos indica es que la gran mayoría de los anfitriones (555) tiene solo un anuncio en Airbnb.</p>
+				<p class="vis-featured"><span class="vis-big">El 79% de anfitriones tiene solo un alojamiento.</span></p>
+				<p>Ya hemos visto que aproximadamente un 11,3% de los anfitriones tienen el 3.656 plazas de alojamiento (49,7%), lo que este gráfico nos indica es que la gran mayoría de los anfitriones (707) tiene solo un anuncio en Airbnb.</p>
 			</div>
 		</div>
 	</section>
@@ -332,12 +353,11 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 	<section id="4" class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-6">Alojamientos Airbnb con y sin número de registro</h2>
-			<div class="col-md-4">
-				<div class="vis-featured spacetop">Un 87% de los alojamientos de Donostia anunciados en Airbnb no están registrados en el Registro de Empresas Turísticas del Gobierno Vasco.</div>
-			</div>
+			<div class="col-md-4 col-md-push-2">Datos: Base de datos de Inside Airbnb en Donostia (1.219 anuncios).</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-5">
+				<div class="vis-featured spacetop">Un 87% de los alojamientos de Donostia anunciados en Airbnb no están registrados en el Registro de Empresas Turísticas del Gobierno Vasco.</div>
 				<p>En este análisis se diferencian las viviendas vacacionales anunciadas en la plataforma Airbnb con número de registro del Registro de Empresas Turísticas del Gobierno Vasco, de las que no lo tienen.</p>
 				<p>En la Comunidad Autónoma Vasca, para que un establecimiento se dedique a la actividad turística debe registrarse en el Registro de Empresas Turísticas del Gobierno Vasco, mediante un formulario denominado <a href="http://www.euskadi.eus/gobierno-vasco/-/contenidos/autorizacion/tu_ap_declaracion_actividad/es_ap/declaracion_dedicacion_actividad_apartamentos.html">Declaración Responsable</a>. El establecimiento turístico está obligado a publicitar este número y hacer constar en todos los documentos que genere, incluyendo los anuncios en Airbnb (<a href="https://www.euskadi.eus/y22-bopv/es/bopv2/datos/2016/08/1603545a.shtml">Ley de turismo del Pais Vasco 2016</a>).</p>
 				<p>Esta acción es independiente a obtener la licencia de actividad en el ayuntamiento, que en el caso de San Sebastián / Donostia, es más restrictivo ya que de forma general no otorga licencias de vivienda turística a pisos superiores al primer piso.</p>
@@ -354,7 +374,7 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 		<div class="row vis-body">
 			<div class="col-md-12">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" scrolling="no" src="https://mirenizaguirre.carto.com/builder/990f7050-1a20-11e7-939a-0e05a8b3e3d7/embed"></iframe>
+					<iframe class="embed-responsive-item" scrolling="no" src="https://numeroteca.carto.com/builder/5d919977-f740-4e2f-b268-03ac6e44d368/embed"></iframe>
 				</div>
 			</div>
 		</div>
@@ -368,7 +388,7 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 			<div class="col-md-3">
 				<p>¿Tienes más datos? ¿Otras fuentes? ¿Información complementaria? ¿Mejoras para el informe?</p>
 				<p>Éxplora el código del informe, modifícalo y notificanos las mejoras.</p>
-				<p><a class="vis-btn" href="https://github.com/montera34/airbnb.donostia">Éxplora el código</a></p>
+				<p><a class="vis-btn" href="https://github.com/montera34/airbnb.efeecto">Éxplora el código</a></p>
 			</div>
 			<div class="col-md-3">
 				<p> ¿Ganas de explorar y experimentar con los datos en bruto?</p>
