@@ -27,8 +27,8 @@
 <meta property="og:title" content="Efecto Airnbnb en Donostia" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Un análisis gráfico de los datos de Airbnb en Donostia / San Sebastián" />
-<meta name="og:image" content="http://lab.montera34.com/airbnb/donostia/images/densidad-airbnb-donostia.png" />
-<meta property="og:url" content="http://lab.montera34.com/airbnb/donostia/" /> 
+<meta name="og:image" content="https://lab.montera34.com/airbnb/donostia/images/densidad-airbnb-donostia.png" />
+<meta property="og:url" content="https://lab.montera34.com/airbnb/donostia/" /> 
 <!-- twitter meta -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@montera34">
@@ -36,9 +36,9 @@
 <meta name="twitter:title" content="Efecto Airnbnb en Donostia" />
 <meta name="twitter:description" content="Un análisis gráfico de los datos de Airbnb en Donostia / San Sebastián" />
 <meta name="twitter:creator" content="@montera34">
-<meta name="twitter:image" content="http://lab.montera34.com/airbnb/donostia/images/densidad-airbnb-donostia.png" />
+<meta name="twitter:image" content="https://lab.montera34.com/airbnb/donostia/images/densidad-airbnb-donostia.png" />
 
-<link href="style.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -53,15 +53,25 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="http://lab.montera34.com/airbnb/donostia">Efecto Airbnb / Donostia</a>
+			<a class="navbar-brand" href="https://lab.montera34.com/airbnb/donostia">Efecto Airbnb / Donostia</a>
 		</div>
 		<div class="collapse navbar-collapse" id="top-navbar-collapse">
 			<ul class="nav navbar-nav nabvar-left">
-				<li><a href="#0">Viviendas vs. Habitaciones</a></li>
-				<li><a href="#1">Hoteles vs. Airbnb</a></li>
-				<li><a href="#2">Barrios</a></li>
-				<li><a href="#3">Anfitriones</a></li>
-				<li><a href="#4">Licencias</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizaciones <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#0">Viviendas vs. Habitaciones</a></li>
+						<li><a href="#1">Hoteles vs. Airbnb</a></li>
+						<li><a href="#2">Barrios</a></li>
+						<li><a href="#3">Anfitriones</a></li>
+						<li><a href="#4">Licencias</a></li>
+						<li><a href="#6">Variaciones espaciales de precios</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Otros informes <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/airbnb/euskadi">Euskadi</a></li>
+					</ul>
+				</li>
 				<li class="highlighted"><a href="#5">Colabora</a></li>
 			</ul>
 		</div>
@@ -69,7 +79,7 @@
 	</nav>
 </header>
 
-<div id="top" class="bgimg">
+<div id="top" class="bgimg top-donostia">
 	  <div class="bginner container-fluid">
 	  <div class="bgcontainer col-md-3 col-md-offset-9">
 		  <h1>Efecto Airnbnb en Donostia</h1>
@@ -100,29 +110,32 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 			<h3>Los datos</h3>
 			<p>Los datos que se usan para este informe provienen de la unión de dos siguientes bases de datos: 
 				<ul>
-					<li><a href="http://insideairbnb.org/euskadi">Inside Airbnb / Euskadi</a> (24-3-2017), web scraping de <a href="http://www.murraycox.com/">Murray Cox</a> (1.219 anuncios).</li> 
+					<li><a href="https://insideairbnb.org/euskadi">Inside Airbnb / Euskadi</a> (24-3-2017), web scraping de <a href="http://www.murraycox.com/">Murray Cox</a> (1.219 anuncios).</li> 
 					<li>API del mapa de Airnb (1-4-2017), web scraping de <a href="https://twitter.com/saigesp">Santi Espinosa</a> (1.545 anuncios).</li>
 				</ul> 
 				Se ha procedido a unir las dos bases de datos con <a href="https://github.com/montera34/airbnbeuskadi/blob/master/analisis/montera34/compare-datasets.Rmd"/>este script de R</a> (<a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">listings_donostia_merged.csv</a>), eliminando los duplicados. Tras la unión de ambas bases de datos obtenemos una de 1.829 anuncios (puedes ver <a href="https://lab.montera34.com/airbnb/process/montera34/compare-datasets_insideairbnb-vs-api-mapa_donostia.html">los resultados de la comparación de estas bases de datos</a>).</p>
 				<ul>
 					<li>Airbnb + API de mapa. Base de datos unificada (1.829 anuncios).</li> 
 				</ul> 				
-			<p>También se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y vivienda de Donostia.</p>
+				<p>También se pueden consultar y descargar los <a href="https://github.com/montera34/airbnbeuskadi/tree/master/data">datos de Airbnb de todo Euskadi</a>, así como datos de población y <a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/viviendas-barrios-donostia.csv">vivienda de Donostia</a>.</p>
 			</div>
 		</div>
 	</div>
 
 	<section id="0" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Viviendas completas vs Habitaciones</h2>
-			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
+			<h2 class="col-md-9">Viviendas completas vs Habitaciones</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFQu%C3%A9-cantidad-de-anuncios-Airbnb-son-pisos-completos%3F-%C2%BFCu%C3%A1ntos-son-habitaciones%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
 		</header>
-		<div class="row vis-body">
+		<div class="row vis-body bigspacetop">
+			<div class="col-md-4">
+				<p class="vis-featured">La oferta de Airbnb en Donostia consiste en<br><span class="vis-big">1.346 vivivendas completas (74%)<br>475 habitaciones privadas (26%)<br>8 habitaciones compartidas</span></p>
+			</div>
+
 			<div class="col-md-5">
 				<p>Esta sección muestra todos los alojamientos de Airbnb en Donostia según el tipo de habitación que se oferte. Aproximadamente tres cuartos son viviendas completas y un cuarto son habitaciones privadas.</p>
-			</div>
-			<div class="col-md-6">
-				<p class="vis-featured">La oferta de Airbnb en Donostia consiste en<br><span class="vis-big">1.346 vivivendas completas (74%)<br>475 habitaciones privadas (26%)<br>8 habitaciones compartidas</span></p>
 			</div>
 		</div>
 		<div class="row vis-body">
@@ -140,10 +153,12 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 
 	<section id="1" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Hoteles vs. Airbnb</h2>
-			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
+			<h2 class="col-md-9">Hoteles vs. Airbnb</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFQu%C3%A9-porcentaje-del-total-de-plazas-de-alojamiento-tur%C3%ADstico-no-est%C3%A1n-%22reguladas%22%3F-%C2%BFQu%C3%A9-cantidad-de-alojamientos-tur%C3%ADsticos-son-pisos-Airbnb%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
 		</header>
-		<div class="row vis-body">
+		<div class="row vis-body bigspacetop">
 			<div class="col-md-3 col-md-push-9">
 				<p>Donostia es una ciudad con un déficit histórico de plazas hoteleras que ha provocado un elevado precio de los alojamientos hoteleros. Esto ha llevado a la corporación municipal a autorizar la construcción de nuevos hoteles que cubran esta necesidad.</p>
 				<p class="vis-featured">En Donostia hay: <br /><span class="vis-big">9.100 plazas hoteleras</span><br><span class="vis-big">7.349 plazas Airbnb</span></p>
@@ -160,10 +175,12 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 
 	<section id="2" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Alojamientos por barrio</h2>
-			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
+			<h2 class="col-md-9">Alojamientos por barrio</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-concentra-la-oferta-por-barrios-de-Airbnb%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
 		</header>
-		<div class="row vis-body">
+		<div class="row vis-body bigspacetop">
 			<div class="col-md-6 col-md-push-3">
 				<p class="vis-featured"><span class="vis-big">El 60% de los anuncios de Airbnb en Donostia están en los barrios de Centro y Gros (1.081 anuncios).</p>
 				<p>Para estudiar cómo se distribuye la oferta de Airbnb en ciudad vamos a estudiarla en relación al total de viviendas por cada barrio. En vez de mostrar y representar los números totales de anuncios de Airbnb por barrio mostramos <strong>los valores relativos respecto el total de viviendas</strong>. Esto nos permite comparar con un valor barrios de muy distintas características y densidades de viviendas.</p>
@@ -191,16 +208,16 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 		</div>
 		<div class="row vis-body">		
 			<div class="col-md-5 col-md-push-1">
-				<p>Es importante reseñar que un anuncio de Airbnb no tiene por qué necesariamente corresponder con una vivienda, ya que dentro de una vivienda puede haber varias habitaciones que se oferten por separado en la web. Sin embargo creemos que la aproximación es válida para un primer acercamiento a los datos. Ver más sobre esto en el <a href="http://lab.montera34.com/airbnb/euskadi">informe Efecto Airbnb Euskadi</a>.</p>
+				<p>Es importante reseñar que un anuncio de Airbnb no tiene por qué necesariamente corresponder con una vivienda, ya que dentro de una vivienda puede haber varias habitaciones que se oferten por separado en la web. Sin embargo creemos que la aproximación es válida para un primer acercamiento a los datos. Ver más sobre esto en el <a href="https://lab.montera34.com/airbnb/euskadi">informe Efecto Airbnb Euskadi</a>.</p>
 			</div>
 			<div class="col-md-2 col-md-push-2">
-				<figure><a href="http://lab.montera34.com/airbnb/euskadi/index.html#2"><img class="img-responsive" src="images/bar-chart-barrios-capitales-euskadi-por-porcentaje_crop.png" alt="Porcentaje de anuncios por viviendas en barrios capitales vascas" /></a>
-					<figcaption>Comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
+				<figure><a href="https://lab.montera34.com/airbnb/euskadi/index.html#2"><img class="img-responsive" src="images/bar-chart-barrios-capitales-euskadi-por-porcentaje_crop.png" alt="Porcentaje de anuncios por viviendas en barrios capitales vascas" /></a>
+					<figcaption>Comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="https://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
 				</figure>
 			</div>
 			<div class="col-md-2 col-md-push-2">
-				<figure><a href="http://lab.montera34.com/airbnb/euskadi/index.html#2"><figure><img src="../euskadi/images/donostia-airbnb-porcentaje.png" class="img-responsive"></figure></a>
-					<figcaption>Puedes ver la comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="http://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
+				<figure><a href="https://lab.montera34.com/airbnb/euskadi/index.html#2"><figure><img src="../euskadi/images/donostia-airbnb-porcentaje.png" class="img-responsive"></figure></a>
+					<figcaption>Puedes ver la comparativa entre barrios de Donostia, Bilbao y Vitoria en <a href="https://lab.montera34.com/airbnb/euskadi/index.html#2">Efecto Airbnb en Euskadi</a>.</figcaption>
 				</figure>
 			</div>
 		</div>
@@ -237,8 +254,10 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 
 	<section id="3" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Concentración de alojamientos por anfitrión</h2>
-			<div class="col-md-4 col-md-push-2">Datos: Base de datos unificada (1.829 anuncios).</div>
+			<h2 class="col-md-9">Concentración de alojamientos por anfitrión</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-est%C3%A1-repartida-la-propiedad-de-los-pisos-de-Airbnb%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-3">
@@ -364,8 +383,10 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 
 	<section id="4" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Alojamientos Airbnb con y sin número de registro</h2>
-			<div class="col-md-4 col-md-push-2">Datos: Base de datos de Inside Airbnb en Donostia (1.219 anuncios).</div>
+			<h2 class="col-md-9">Alojamientos Airbnb con y sin número de registro</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFCu%C3%A1ntos-anuncios-en-Airbnb-son-%22legales%22%3F-%C2%BFCu%C3%A1ntos-ilegales,-no-legales-o-alegales%3F-%C2%BFCu%C3%A1l-es-la-distribuci%C3%B3n-de-ambos-tipos-por-barrios%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-5">
@@ -389,6 +410,168 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 					<iframe class="embed-responsive-item" scrolling="no" src="https://numeroteca.carto.com/builder/5d919977-f740-4e2f-b268-03ac6e44d368/embed"></iframe>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section id="6" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-9">Variaciones espaciales de precios por plaza en Donostia</h2>
+			<div class="col-md-3">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/Variaciones-espaciales-de-precios-por-plaza-en-Donostia">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_merged.csv">Datos abril 2017</a> (1.829 anuncios)</small></div>
+			</div>
+		</header>
+		<div class="row vis-body">
+			<div class="col-md-6">
+				<p class="vis-featured"><span class="vis-big">El 46% de los pisos turísticos completos se encuentran en el barrio Centro.</span><br>En torno al 17% en Gros y algo menos del 10% en el Antiguo.<br>El 27% se reparte en el resto de barrios.</p>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/13AHSD6qJ1AqUh5JDKFdGsQ7VImOEXb585lyDTKXDs3U/pubchart?oid=1014442932&amp;format=interactive"></iframe>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<p class="vis-featured"><span class="vis-big">Los precios medios más altos se registran en Centro (37€), seguido por Gros (34€) y Antiguo (31€).</span><br>Sin embargo, los precios más altos se encuentran en Miramon-Zorroaga, aunque esta zona tiene una oferta muy reducida (menos del 1%).</p>
+				<div class="embed-responsive embed-responsive-4by3">
+					<iframe class="embed-responsive-item" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/13AHSD6qJ1AqUh5JDKFdGsQ7VImOEXb585lyDTKXDs3U/pubchart?oid=278744076&amp;format=interactive"></iframe>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" frameborder="0" src="https://claudiayub.carto.com/builder/66adc2c5-d023-4076-9ce5-2d0c14788c3a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+			<div class="col-md-3">
+				<h4>Variación espacial</h4>
+				<p>Para hacernos una idea de la distribución espacial de los precios medios por plaza de los pisos completos en Donostia hemos agregado los valores por cada unidad de superficie representada (hexbins).  De los 1.346 anuncios de pisos completos, el precio medio por plaza en DSS es de 34,8 euros. Los precios más altos se encuentran fundamentalmente en la bahía (Centro y Antiguo), en torno a la calle San Martín (Centro) y frente el Urumea en Amara. Fuera de éstos también encontramos áreas con un precio medio elevado. Dado que en estas zonas el número total de anuncios en muy reducido, cabe pensar que se debe a las características propias del piso turístico.</p>
+			</div>
+			<div class="col-md-6 col-md-offset-1">
+<div class="table-responsive">
+	<table class="table table-condensed table-hover">
+		<thead>
+			<tr>
+				<th></th>
+				<th class="text-right">Media</th>
+				<th class="text-right">Desviación</th>
+				<th class="text-right">Mínimo</th>
+				<th class="text-right">Máximo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+<td>Miramon-Zorroaga</td>
+<td class="text-right">37,32</td>
+<td class="text-right">17,73</td>
+<td class="text-right">7,50</td>
+<td class="text-right">62,50</td>
+			</tr><tr>
+<td>Centro</td>
+<td class="text-right">37,02</td>
+<td class="text-right">21,11</td>
+<td class="text-right">6,00</td>
+<td class="text-right">269,50</td>
+			</tr><tr>
+<td>Igeldo</td>
+<td class="text-right">36,69</td>
+<td class="text-right">12,29</td>
+<td class="text-right">15,00</td>
+<td class="text-right">73,08</td>
+			</tr><tr>
+<td>Egia</td>
+<td class="text-right">36,50</td>
+<td class="text-right">21,36</td>
+<td class="text-right">13,33</td>
+<td class="text-right">134,75</td>
+			</tr><tr>
+<td>Aiete</td>
+<td class="text-right">36,09</td>
+<td class="text-right">24,02</td>
+<td class="text-right">7,80</td>
+<td class="text-right">162,25</td>
+			</tr><tr>
+<td>Gros</td>
+<td class="text-right">34,70</td>
+<td class="text-right">20,98</td>
+<td class="text-right">9,83</td>
+<td class="text-right">184,50</td>
+			</tr><tr>
+<td>Amara Berri</td>
+<td class="text-right">33,23</td>
+<td class="text-right">19,47</td>
+<td class="text-right">11,00</td>
+<td class="text-right">106,33</td>
+			</tr><tr>
+<td>Loiola</td>
+<td class="text-right">31,63</td>
+<td class="text-right">13,10</td>
+<td class="text-right">12,00</td>
+<td class="text-right">45,50</td>
+			</tr><tr>
+<td>Antiguo</td>
+<td class="text-right">31,53</td>
+<td class="text-right">17,98</td>
+<td class="text-right">9,17</td>
+<td class="text-right">102,25</td>
+			</tr><tr>
+<td>Ategorrieta-Ulia</td>
+<td class="text-right">28,29</td>
+<td class="text-right">14,98</td>
+<td class="text-right">6,90</td>
+<td class="text-right">67,50</td>
+			</tr><tr>
+<td>Intxaurrondo</td>
+<td class="text-right">27,76</td>
+<td class="text-right">17,42</td>
+<td class="text-right">9,00</td>
+<td class="text-right">83,33</td>
+			</tr><tr>
+<td>Zubieta</td>
+<td class="text-right">27,50</td>
+<td class="text-right">-</td>
+<td class="text-right">27,50</td>
+<td class="text-right">27,50</td>
+			</tr><tr>
+<td>Ibaeta</td>
+<td class="text-right">27,12</td>
+<td class="text-right">19,22</td>
+<td class="text-right">9,83</td>
+<td class="text-right">115,00</td>
+			</tr><tr>
+<td>Añorga</td>
+<td class="text-right">24,67</td>
+<td class="text-right">18,39</td>
+<td class="text-right">0,00</td>
+<td class="text-right">50,00</td>
+			</tr><tr>
+<td>Altza</td>
+<td class="text-right">20,55</td>
+<td class="text-right">6,05</td>
+<td class="text-right">15,00</td>
+<td class="text-right">30,00</td>
+			</tr><tr>
+<td>Miracruz-Bidebieta</td>
+<td class="text-right">18,51</td>
+<td class="text-right">6,96</td>
+<td class="text-right">12,00</td>
+<td class="text-right">30,00</td>
+			</tr><tr>
+<td>Martutene</td>
+<td class="text-right">17,50</td>
+<td class="text-right">-</td>
+<td class="text-right">17,50</td>
+<td class="text-right">17,50</td>
+			</tr><tr>
+<td>Suma total</td>
+<td class="text-right">34,80</td>
+<td class="text-right">20,42</td>
+<td class="text-right">0,00</td>
+<td class="text-right">269,50</td>
+			</tr>
+		</body>
+	</table>
+</div>
+			</div>
+		</div>
 		</div>
 	</section>
 
@@ -442,8 +625,8 @@ Habib Belaribi, Ana Boto, Claudia Yubero, Aritz Zabaleta, Santi Espinosa, Miquel
 			<p><img src="../images/net.logo.png" alt="Logo red Efecto Airbnb" /></p>
 			<p><small>Efecto Airbnb en:</small></p>
 			<ul class="list-unstyled">
-				<li><small><a href="http://lab.montera34.com/airbnb/donostia">Donostia/ San Sebastian</a></small></li>
-				<li><small><a href="http://lab.montera34.com/airbnb/euskadi">Euskadi</a></small></li>
+				<li><small><a href="https://lab.montera34.com/airbnb/donostia">Donostia/ San Sebastian</a></small></li>
+				<li><small><a href="https://lab.montera34.com/airbnb/euskadi">Euskadi</a></small></li>
 			</ul>	
 		</div>
 

@@ -38,7 +38,7 @@
 <meta name="twitter:creator" content="@montera34">
 <meta name="twitter:image" content="https://lab.montera34.com/airbnb/images/top.bg.png" />
 
-<link href="style.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -57,17 +57,28 @@
 		</div>
 		<div class="collapse navbar-collapse" id="top-navbar-collapse">
 			<ul class="nav navbar-nav nabvar-left">
-				<li><a href="#1">Procedencia visitantes</a></li>
-				<li><a href="#2">Data Hippo</a></li>
-				<li><a href="#3">Análisis por palabras</a></li>
-				<li><a href="#4">Variaciones espaciales de precios</a></li>
+				<li><a href="#0">Teoría</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizaciones <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#1">Procedencia visitantes</a></li>
+						<li><a href="#2">Data Hippo</a></li>
+						<li><a href="#3">Análisis por palabras</a></li>
+						<li><a href="#4">Variaciones espaciales de precios</a></li>
+					</ul>
+				</li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Otros informes <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="/airbnb/donostia">Donostia</a></li>
+						<li><a href="/airbnb/euskadi">Euskadi</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>
 	</nav>
 </header>
 
-<div id="top" class="bgimg">
+<div id="top" class="bgimg top-summerlab17">
 	  <div class="bginner container-fluid">
 	  <div class="bgcontainer col-md-3 col-md-offset-9">
 		  <h1>Efecto Airbnb<br>Summerlab'17</h1>
@@ -97,9 +108,12 @@
 
 	<section id="1" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-8">Procedencia de los usuarios de Airbnb en Donostia</h2>
+			<h2 class="col-md-9">Procedencia de los usuarios de Airbnb en Donostia</h2>
+			<div class="col-md-3">
+				<div class="text-tight"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFDe-d%C3%B3nde-vienen-los-usuarios-de-Airbnb%3F">Documentación y metodología</a></div>
+			</div>
 		</header>
-		<div class="row vis-body">
+		<div class="row vis-body bigspacetop">
 			<div class="col-md-12">
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" frameborder="0" src="https://anarranz.carto.com/builder/1279fcfb-be62-414b-938f-e8b4fcc04432/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
@@ -120,7 +134,6 @@
 					<li>utilización de un mismo alojamiento por parte de diferentes personas de un mismo país.</li>
 				</ul>
 				<p>La automatización del procedimiento nos ha permitido obtener la información de forma más rápida, pero, para detectar errores y conocer los matices de la información que trabajamos, con el proceso manual hemos podido detectar abreviaturas, entre otros formatos, pudiendo corregir más fácilmente errores. Tal vez con un conocimiento más avanzado en la utilización de los diferentes programas podríamos conseguir lo mismo de forma aún más ràpida.</p>
-				<p><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFDe-d%C3%B3nde-vienen-los-usuarios-de-Airbnb%3F">Documentación y metodología</a></p>
 				<p class="spacetop"><strong>Preguntas pendientes</strong>. ¿Cuántos repiten visita a Donostia? ¿Cuántos inquilinos del mismo país de procedencia repiten alojamiento?</p>
 			</div>
 		</div>
@@ -152,11 +165,14 @@
 
 	<section id="3" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-6">Análisis de los anuncios por palabras</h2>
-			<p class="col-md-4">Para poder analizar la frecuencia con la que aparecen las palabras usadas en los anuncios de AirBnB, se ha seguido la <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">metodología descrita en la wiki del taller</a>. Se ha hecho el análisis para Donostia y otras tres grandes capitales turísticas, Madrid, Barcelona y Mallorca, para poder comparar.</p>
-			<p class="col-md-2"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">Documentación y metodología</a></p>
+			<h2 class="col-md-9">Análisis de los anuncios por palabras</h2>
+			<div class="col-md-3">
+				<div class="text-tight"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">Documentación y metodología</a></div>
+			</div>
 		</header>
-		<div class="row vis-body">
+		<div class="row vis-body bigspacetop">
+			<p class="col-md-8">Para poder analizar la frecuencia con la que aparecen las palabras usadas en los anuncios de AirBnB, se ha seguido la <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-anuncian-los-pisos%3F-Un-an%C3%A1lisis-de-las-palabras-usadas">metodología descrita en la wiki del taller</a>. Se ha hecho el análisis para Donostia y otras tres grandes capitales turísticas, Madrid, Barcelona y Mallorca, para poder comparar.</p>
+			<div class="clearfix"></div>
 			<div class="col-md-6">
 				<figure><img class="img-responsive" src="images/wordcloudbcn2.png" alt="Nube de palabras más usadas en Barcelona" /></figure>
 				<h4>Barcelona</h4>
@@ -195,8 +211,10 @@
 
 	<section id="4" class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-10">Variaciones espaciales de precios por plaza en Donostia</h2>
-			<p class="col-md-2"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/Variaciones-espaciales-de-precios-por-plaza-en-Donostia">Documentación y metodología</a></p>
+			<h2 class="col-md-9">Variaciones espaciales de precios por plaza en Donostia</h2>
+			<div class="col-md-3">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/Variaciones-espaciales-de-precios-por-plaza-en-Donostia">Documentación y metodología</a></div>
+			</div>
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-6">
@@ -212,14 +230,142 @@
 				</div>
 			</div>
 			<div class="clearfix"></div>
+			<div class="col-md-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" frameborder="0" src="https://claudiayub.carto.com/builder/66adc2c5-d023-4076-9ce5-2d0c14788c3a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
 			<div class="col-md-3">
 				<h4>Variación espacial</h4>
 				<p>Para hacernos una idea de la distribución espacial de los precios medios por plaza de los pisos completos en Donostia hemos agregado los valores por cada unidad de superficie representada (hexbins).  De los 1.346 anuncios de pisos completos, el precio medio por plaza en DSS es de 34,8 euros. Los precios más altos se encuentran fundamentalmente en la bahía (Centro y Antiguo), en torno a la calle San Martín (Centro) y frente el Urumea en Amara. Fuera de éstos también encontramos áreas con un precio medio elevado. Dado que en estas zonas el número total de anuncios en muy reducido, cabe pensar que se debe a las características propias del piso turístico.</p>
 			</div>
-			<div class="col-md-9">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" frameborder="0" src="https://claudiayub.carto.com/builder/66adc2c5-d023-4076-9ce5-2d0c14788c3a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-				</div>
+			<div class="col-md-6 col-md-offset-1">
+<div class="table-responsive">
+	<table class="table table-condensed table-hover">
+		<thead>
+			<tr>
+				<th></th>
+				<th class="text-right">Media</th>
+				<th class="text-right">Desviación</th>
+				<th class="text-right">Mínimo</th>
+				<th class="text-right">Máximo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+<td>Miramon-Zorroaga</td>
+<td class="text-right">37,32</td>
+<td class="text-right">17,73</td>
+<td class="text-right">7,50</td>
+<td class="text-right">62,50</td>
+			</tr><tr>
+<td>Centro</td>
+<td class="text-right">37,02</td>
+<td class="text-right">21,11</td>
+<td class="text-right">6,00</td>
+<td class="text-right">269,50</td>
+			</tr><tr>
+<td>Igeldo</td>
+<td class="text-right">36,69</td>
+<td class="text-right">12,29</td>
+<td class="text-right">15,00</td>
+<td class="text-right">73,08</td>
+			</tr><tr>
+<td>Egia</td>
+<td class="text-right">36,50</td>
+<td class="text-right">21,36</td>
+<td class="text-right">13,33</td>
+<td class="text-right">134,75</td>
+			</tr><tr>
+<td>Aiete</td>
+<td class="text-right">36,09</td>
+<td class="text-right">24,02</td>
+<td class="text-right">7,80</td>
+<td class="text-right">162,25</td>
+			</tr><tr>
+<td>Gros</td>
+<td class="text-right">34,70</td>
+<td class="text-right">20,98</td>
+<td class="text-right">9,83</td>
+<td class="text-right">184,50</td>
+			</tr><tr>
+<td>Amara Berri</td>
+<td class="text-right">33,23</td>
+<td class="text-right">19,47</td>
+<td class="text-right">11,00</td>
+<td class="text-right">106,33</td>
+			</tr><tr>
+<td>Loiola</td>
+<td class="text-right">31,63</td>
+<td class="text-right">13,10</td>
+<td class="text-right">12,00</td>
+<td class="text-right">45,50</td>
+			</tr><tr>
+<td>Antiguo</td>
+<td class="text-right">31,53</td>
+<td class="text-right">17,98</td>
+<td class="text-right">9,17</td>
+<td class="text-right">102,25</td>
+			</tr><tr>
+<td>Ategorrieta-Ulia</td>
+<td class="text-right">28,29</td>
+<td class="text-right">14,98</td>
+<td class="text-right">6,90</td>
+<td class="text-right">67,50</td>
+			</tr><tr>
+<td>Intxaurrondo</td>
+<td class="text-right">27,76</td>
+<td class="text-right">17,42</td>
+<td class="text-right">9,00</td>
+<td class="text-right">83,33</td>
+			</tr><tr>
+<td>Zubieta</td>
+<td class="text-right">27,50</td>
+<td class="text-right">-</td>
+<td class="text-right">27,50</td>
+<td class="text-right">27,50</td>
+			</tr><tr>
+<td>Ibaeta</td>
+<td class="text-right">27,12</td>
+<td class="text-right">19,22</td>
+<td class="text-right">9,83</td>
+<td class="text-right">115,00</td>
+			</tr><tr>
+<td>Añorga</td>
+<td class="text-right">24,67</td>
+<td class="text-right">18,39</td>
+<td class="text-right">0,00</td>
+<td class="text-right">50,00</td>
+			</tr><tr>
+<td>Altza</td>
+<td class="text-right">20,55</td>
+<td class="text-right">6,05</td>
+<td class="text-right">15,00</td>
+<td class="text-right">30,00</td>
+			</tr><tr>
+<td>Miracruz-Bidebieta</td>
+<td class="text-right">18,51</td>
+<td class="text-right">6,96</td>
+<td class="text-right">12,00</td>
+<td class="text-right">30,00</td>
+			</tr><tr>
+<td>Martutene</td>
+<td class="text-right">17,50</td>
+<td class="text-right">-</td>
+<td class="text-right">17,50</td>
+<td class="text-right">17,50</td>
+			</tr><tr>
+<td>Suma total</td>
+<td class="text-right">34,80</td>
+<td class="text-right">20,42</td>
+<td class="text-right">0,00</td>
+<td class="text-right">269,50</td>
+			</tr>
+		</body>
+	</table>
+</div>
 			</div>
 		</div>
 		</div>
@@ -258,9 +404,9 @@
 	</div>
 </footer>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="stats.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../stats.js"></script>
 
 </body>
 </html>

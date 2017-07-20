@@ -11,6 +11,10 @@ h1 {
 .spacetop {
 	margin-top: 7px;
 }
+.bigspacetop {
+	margin-top: 25px;
+}
+
 #top-navbar {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -40,12 +44,23 @@ h1 {
 	text-align: right;
 }
 #top {
-	background-image: url(images/top.bg.2.jpg);
 	background-size: cover;
 	height: 700px;
 	display: table;
 	color: #fff;
 	margin-bottom: 0;
+}
+.top-airbnb {
+	background-image: url(images/top.bg.2.jpg);
+}
+.top-donostia {
+	background-image: url(donostia/images/top.bg.jpg);
+}
+.top-euskadi {
+	background-image: url(euskadi/images/top.bg.jpg);
+}
+.top-summerlab17 {
+	background-image: url(summerlab17/images/top.bg.2.jpg);
 }
 .intro figure {
 	margin-bottom: 1em;
@@ -68,15 +83,20 @@ h1 {
 	background-color: #f5f5f5;
 	padding: 5px 10px;
 }
-.vis-btn {
-	background-color: #fd5;
+.vis-src a {
+	font-weight: bold;
 	color: #000;
+}
+.vis-btn {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid #000;
 	padding: 5px 10px;
 	text-transform: uppercase;
 	display: inline-block;
 }
 .vis-btn:hover {
-	color: #fff;
+	color: rgba(0,0,0,0.5);
 	text-decoration: none;
 }
 .vis-legend {
@@ -112,6 +132,10 @@ h1 {
 	background-color: #084594;
 }
 
+figcaption {
+	margin: 0 0 2em 0;
+	font-size: 0.8em;
+}
 
 #bottom {
 	background-color: #f5f5f5;
