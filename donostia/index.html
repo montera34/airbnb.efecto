@@ -183,11 +183,9 @@
 		<div class="row vis-body">
 			<div class="col-md-12">
 				<div class="embed-responsive embed-responsive-16by9">
-					<figure>
-						<iframe class="embed-responsive-item" src="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed"></iframe>
-						<figcaption><a href="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed">Mapa de viviendas completas vs habitaciones.</a></figcaption>
-					</figure>
+					<iframe class="embed-responsive-item" src="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed"></iframe>
 				</div>
+				<a href="https://numeroteca.carto.com/builder/fef031fc-29e5-42d0-9134-476c570dd03f/embed">Mapa de viviendas completas vs habitaciones. Ver en pantalla completa</a>
 				<p>El tipo de habitación nos puede dar pistas sobre el tipo de propietario que ofrece alojamienoto. Dejamos para más adelante analizar si existe correlación entre tipo de habitación con la disponibilidad (o con el número de pernoctaciones).</p>
 			</div>
 		</div>
@@ -211,6 +209,7 @@
 				<div class="embed-responsive embed-responsive-4by3">
 					<iframe class="embed-responsive-item" src="https://yayitazale.carto.com/builder/3fe60944-1a1b-11e7-972a-0e3a376473ab/embed"></iframe>
 				</div>
+				<a href="https://yayitazale.carto.com/builder/3fe60944-1a1b-11e7-972a-0e3a376473ab/embed">Ver mapa en pantalla completa</a>. <small class="vis-src"><a href="https://github.com/montera34/airbnbeuskadi/blob/master/data/listings_donostia_simple.csv">Datos marzo 2017</a> (1.219 anuncios)</small>
 			</div>
 		</div>
 	</section>
@@ -223,21 +222,21 @@
 			</div>
 		</header>
 		<div class="row vis-body bigspacetop">
-			<div class="col-md-6 col-md-push-3">
+			<div class="col-md-6 col-md-offset-3">
 				<p class="vis-featured"><span class="vis-big">El 60% de los anuncios de Airbnb en Donostia están en los barrios de Centro y Gros (1.081 anuncios).</p>
 				<p>Para estudiar cómo se distribuye la oferta de Airbnb en ciudad vamos a estudiarla en relación al total de viviendas por cada barrio. En vez de mostrar y representar los números totales de anuncios de Airbnb por barrio mostramos <strong>los valores relativos respecto el total de viviendas</strong>. Esto nos permite comparar con un valor barrios de muy distintas características y densidades de viviendas.</p>
 				<p>Donostia es con diferencia la ciudad de Euskadi que más anuncios de Airbnb tiene y a la vez la que tiene mayor cantidad por total de vivienda, siendo <strong>los barrios de Igeldo, Centro, Ategorrieta-Ulia, Miramon-Zorroaga y Gros los que tienen mayores porcentajes de todo Euskadi por encima del 3%</strong>, seguidos de Antiguo con valores en torno al 2%.</p>
 			</div>
 		</div>
 		<div class="row vis-body">
-			<div class="col-md-10 col-md-push-1">
+			<div class="col-md-10 col-md-offset-1">
 				<figure><a href="images/bar-chart-barrios-donosti-por-porcentaje.png"><img class="img-responsive" src="images/bar-chart-barrios-donosti-por-porcentaje.png" alt="Porcentaje de anuncios por viviendas en barrios de Donostia" /></a>
 					<figcaption>Porcentaje y número de anuncios de Airbnb por número de viviendas por barrio.</figcaption>
 				</figure>
 			</div>
 		</div>
 		<div class="row vis-body">
-			<div class="col-md-6 col-md-push-3">
+			<div class="col-md-6 col-md-offset-3">
 				<p>Método de conteo: se han contado puntos (anuncios) en polígonos (barrios) <a href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-se-concentra-la-oferta-por-barrios-de-Airbnb%3F">descrito en este manual</a>. Como algunos puntos han sido situados en el mar y fuera del contorno del barrio, dada la imprecisión con la que Airbnb ofrece sus datos, el número de total de anuncios en puede ser algo menor que los indicados en los totales.</p>
 			</div>
 		</div>
@@ -263,18 +262,18 @@
 				</figure>
 			</div>
 		</div>
-
 		<div class="row vis-body">
 			<div class="col-md-9">
+				<h3>Cartograma de porcentaje de anuncios de Airnb por número de viviendas</h3>
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe width="668" height="371" seamless frameborder="0" scrolling="no" src="https://lab.montera34.com/airbnb/donostia/cartogram/"></iframe>
+					<iframe width="668" height="371" seamless frameborder="0" scrolling="no" src="https://lab.montera34.com/airbnb/donostia/cartogram/index.html"></iframe>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<p>xxx</p>
+				<p>Con este cartograma cada barrio está representado por la cantidad de viviendas que hay en él y el color es más o menos intenso dependiendo del porcentaje de anuncios de Airbnb que hay respecto al número de viviendas. De este modo evitamos uno de los problemas típicos de muchos mapas que sobrerepresentan a regiones que son poco relevantes pero que tienen son muy extensas. En nuestro caso se puede dar la situación de barrios muy extensos, pero que tienen pocas viviendas. Es el caso de Igeldo: el barrio con más alto porcentaje de anuncios de Airbnb por vivienda (7,6%), pero en nuestro cartograma aparece pequeño porque en ese barrio solamente cuenta con 496 viviendas, frente a las 13.905 de Centro, por ejemplo.</p>
+				<p class="vis-legend">Esta visualización está inspirada y <a href="https://politibot.io/resultados-de-las-primarias-del-psoe/">utiliza el código de Martín González</a>. Gracias por tu ayuda.</p>
 			</div>
 		</div>
-
 
 		<div class="row vis-body">
 			<div class="col-md-9">
@@ -432,7 +431,7 @@
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-5">
-				<div class="vis-featured spacetop">Un 87% de los alojamientos de Donostia anunciados en Airbnb no están registrados en el Registro de Empresas Turísticas del Gobierno Vasco.</div>
+				<div class="vis-featured spacetop">Un 87% de los alojamientos de Donostia anunciados en Airbnb no están registrados en el Registro de Empresas Turísticas del Gobierno Vasco o por lo menos su número de registro no aparece en la web de Airbnb.</div>
 				<p>En este análisis se diferencian las viviendas vacacionales anunciadas en la plataforma Airbnb con número de registro del Registro de Empresas Turísticas del Gobierno Vasco, de las que no lo tienen.</p>
 				<p>En la Comunidad Autónoma Vasca, para que un establecimiento se dedique a la actividad turística debe registrarse en el Registro de Empresas Turísticas del Gobierno Vasco, mediante un formulario denominado <a href="http://www.euskadi.eus/gobierno-vasco/-/contenidos/autorizacion/tu_ap_declaracion_actividad/es_ap/declaracion_dedicacion_actividad_apartamentos.html">Declaración Responsable</a>. El establecimiento turístico está obligado a publicitar este número y hacer constar en todos los documentos que genere, incluyendo los anuncios en Airbnb (<a href="https://www.euskadi.eus/y22-bopv/es/bopv2/datos/2016/08/1603545a.shtml">Ley de turismo del Pais Vasco 2016</a>).</p>
 				<p>Esta acción es independiente a obtener la licencia de actividad en el ayuntamiento, que en el caso de San Sebastián / Donostia, es más restrictivo ya que de forma general no otorga licencias de vivienda turística a pisos superiores al primer piso.</p>
@@ -451,6 +450,7 @@
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" scrolling="no" src="https://numeroteca.carto.com/builder/5d919977-f740-4e2f-b268-03ac6e44d368/embed"></iframe>
 				</div>
+				<a href="https://numeroteca.carto.com/builder/5d919977-f740-4e2f-b268-03ac6e44d368/embed">Mapa de pisos con y sin registro</a>.
 			</div>
 		</div>
 	</section>
