@@ -56,6 +56,9 @@ h1 {
 .top-donostia {
 	background-image: url(donostia/images/efecto-airbnb-donostia.png);
 }
+.top-donostia-1 {
+	background-image: url(donostia-v1.0/images/top.bg.jpg);
+}
 .top-euskadi {
 	background-image: url(euskadi/images/top.bg.jpg);
 }
