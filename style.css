@@ -14,7 +14,6 @@ h1 {
 .bigspacetop {
 	margin-top: 25px;
 }
-
 #top-navbar {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -67,12 +66,6 @@ h1 {
 }
 .intro figure {
 	margin-bottom: 1em;
-}
-.intro table thead th {
-	text-align: right;
-}
-.table > thead > tr > th, .table > tbody > tr > th, .table > thead > tr > td, .table > tbody > tr > td {
-	border-top: none;
 }
 .vis-item {
 	padding: 70px 0;
