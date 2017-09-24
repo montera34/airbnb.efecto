@@ -61,9 +61,10 @@
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizaciones <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#1">Procedencia visitantes</a></li>
-						<li><a href="#2">Data Hippo</a></li>
 						<li><a href="#3">Análisis por palabras</a></li>
 						<li><a href="#4">Variaciones espaciales de precios</a></li>
+						<li><a href="#5">Rendimiento vivienda turística vs. residencial</a></li>
+						<li><a href="#2">Data Hippo</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Otros informes <span class="caret"></span></a>
@@ -135,30 +136,6 @@
 				</ul>
 				<p>La automatización del procedimiento nos ha permitido obtener la información de forma más rápida, pero, para detectar errores y conocer los matices de la información que trabajamos, con el proceso manual hemos podido detectar abreviaturas, entre otros formatos, pudiendo corregir más fácilmente errores. Tal vez con un conocimiento más avanzado en la utilización de los diferentes programas podríamos conseguir lo mismo de forma aún más ràpida.</p>
 				<p class="spacetop"><strong>Preguntas pendientes</strong>. ¿Cuántos repiten visita a Donostia? ¿Cuántos inquilinos del mismo país de procedencia repiten alojamiento?</p>
-			</div>
-		</div>
-	</section>
-
-	<section id="2" class="vis-item">
-		<header class="row vis-head">
-			<h2 class="col-md-8">Data hippo</h2>
-		</header>
-		<div class="row vis-body">
-			<div class="col-md-1">
-				<p><img class="img-responsive" src="images/data.hippo.logo.png" alt="Logo de Data Hippo" /></p>
-			</div>
-			<div class="col-md-3">
-				<p>El objetivo de este proyecto es proporcionar una API pública a las personas que estén interesadas en obtener datos de diferentes plataformas de alquileres turísticos, como AirBnb y HomeAway, para proporcionarles un lugar común donde almacenar sus datos y acceder a datos hayan proporcionado otros usuarios.</p>
-			</div>
-			<div class="col-md-3">
-				<p>Esta API proporciona a los webscrappers un lugar donde pueden almacenar sus datos obtenidos sin la necesidad de disponer de un servicio de alojamiento web.</p>
-			</div>
-			<div class="col-md-3">
-				<ul class="list-unstyled">
-					<li>Twitter: <a href="https://twitter.com/data_hippo">@data_hippo</a></li>
-					<li>Sitio web: <a href="http://datahippo.org">http://datahippo.org</a>.</li>
-					<li>Y la documentación técnica en una <a href="https://github.com/Saigesp/datahippo/wiki">wiki</a>.</li>
-				</ul>
 			</div>
 		</div>
 	</section>
@@ -368,6 +345,67 @@
 </div>
 			</div>
 		</div>
+		</div>
+	</section>
+
+	<section id="5" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-8">Rendimiento neto del alquiler de una misma vivienda en uso turístico y residencial</h2>
+		</header>
+		<div class="row vis-body">
+			<div class="col-md-3">
+				<p>Hemos comparado una misma vivienda de dos habitaciones y dos baños en una ubicación céntrica en Donostia en función de su uso, alquiler residencial (gráfico 1) o turístico y de su situación fiscal, tributa o no tributa sus ingresos.</p>
+				<p>En uso turístico hemos distinguido entre dos modelos de gestión: autogestión (gráfico 2) en el que el propietario se encarga de los trabajos que implica el uso turístico; y gestión mediante una empresa gestora (Graf.3).</p>
+				<p>Hemos elegido esta tipología de vivienda por ser la predominante en Donostia (43% Fuente: Airdna.co dic-16) en el mercado de alquiler turístico. Hemos estimado en 1.000 euros mensuales la renta media que obtendría esta vivienda en alquiler residencial (Fuente: Observatorio Vasco de Vivienda).</p>
+				<p>Hemos calculado el rendimiento neto después de impuestos de acuerdo con la norma de IRPF de Gipuzkoa tanto en uso residencial (base del ahorro) como en uso turístico (base general).</p>
+				<p>Partiendo del rendimiento neto después de impuestos del alquiler en uso residencial, hemos calculado la facturación bruta necesaria en uso turístico mediante empresa gestora para igualar el rendimiento en uso residencial. También hemos contemplado la hipótesis de que un propietario particular lleve adelante la gestión de esa misma vivienda en autogestión, esto es, sin empresa que gestione su piso.</p>
+				<p>Además hemos estudiado el ingreso que obtiene el propietario si evade impuestos alquilando la vivienda en uso residencial (gráfico 4), uso turístico mediante empresa gestora (gráfico 5) y uso turístico en autogestión (gráfico 6).</p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+			<div class="clearfix"></div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+			<div class="col-md-6">
+				<p><img src="" alt="" /></p>
+			</div>
+		</div>
+	</section>
+
+	<section id="2" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-12">Data hippo. Cómo automatizar la recogida y almacenamiento de datos de alojamientos turísticos</h2>
+		</header>
+		<div class="row vis-body">
+			<div class="col-md-1">
+				<p><img class="img-responsive" src="images/data.hippo.logo.png" alt="Logo de Data Hippo" /></p>
+			</div>
+			<div class="col-md-3">
+				<p>El objetivo de este proyecto es proporcionar una API pública a las personas que estén interesadas en obtener datos de diferentes plataformas de alquileres turísticos, como AirBnb y HomeAway, para proporcionarles un lugar común donde almacenar sus datos y acceder a datos hayan proporcionado otros usuarios.</p>
+			</div>
+			<div class="col-md-3">
+				<p>Esta API proporciona a los webscrappers un lugar donde pueden almacenar sus datos obtenidos sin la necesidad de disponer de un servicio de alojamiento web.</p>
+			</div>
+			<div class="col-md-3">
+				<ul class="list-unstyled">
+					<li>Twitter: <a href="https://twitter.com/data_hippo">@data_hippo</a></li>
+					<li>Sitio web: <a href="http://datahippo.org">http://datahippo.org</a>.</li>
+					<li>Y la documentación técnica en una <a href="https://github.com/Saigesp/datahippo/wiki">wiki</a>.</li>
+				</ul>
+			</div>
 		</div>
 	</section>
 
