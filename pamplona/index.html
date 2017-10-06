@@ -59,10 +59,10 @@
 			<ul class="nav navbar-nav nabvar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizaciones <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#0">Visualización 1</a></li>
-						<li><a href="#1">Visualización 2</a></li>
-						<li><a href="#2">Visualización 3</a></li>
-						<li><a href="#3">Visualización 4</a></li>
+						<li><a href="#1">Tipo de alojamiento</a></li>
+						<li><a href="#2">Alojamientos por barrios</a></li>
+						<li><a href="#3">Hoteles, hostales, albergues vs. Airbnb</a></li>
+						<li><a href="#4">Concentración por anfitrión</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  href="#">Informes territorios <span class="caret"></span></a>
@@ -82,18 +82,17 @@
 	<div class="bginner container-fluid">
 		<div class="bgcontainer">
 			<header class="col-md-12">
-				<h1>Efecto Airbnb</h1>
+				<h1>Efecto Airbnb en Pamplona</h1>
 			</header>
 			<div class="col-md-6">
-				<p>Airbnb y otras plataformas de la llamada economía colaborativa han sido acusadas de contribuir al alza en los precios inmobiliarios y de ser un elemento disruptivo en las comunidades locales. Por otro lado se defiende que la supuesta tendencia gentrificadora de la web es exagerada. ¿Quién tiene razón? ¡Que hablen los datos!</p>
-				<p><strong>En esta página agrupamos las diferentes actividades sobre este tema.</strong></p>
+				<p>Airbnb y otras plataformas de la llamada economía colaborativa han sido acusadas de contribuir al alza en los precios inmobiliarios y de ser un elemento disruptivo en las comunidades locales. Por otro lado se defiende que la supuesta tendencia gentrificadora de estas webs es exagerada. ¿Quién tiene razón? <strong>¡Que hablen los datos!</strong></p>
 			</div>
 			<div class="col-md-3">
-				<p>¿Tienes preguntas, sugerencias, comentarios, propuestas?</p>
+				<p>¿Tienes sugerencias, comentarios, propuestas, correcciones, más datos?</p>
 				<p><a class="vis-btn" href="https://montera34.com/contacto">Contáctanos</a></p>
 			</div>
 			<div class="col-md-3">
-				<p>¿Quieres estar informado sobre futuros talleres y actividades de Montera34?</p>
+				<p>¿Quieres estar informado sobre futuros talleres e informes?</p>
 				<p><a class="vis-btn" href="https://montera34.com/suscribete">Suscríbete a la newsletter</a></p>
 			</div>
 		</div>
@@ -101,6 +100,108 @@
 </div>
 
 <main class="container">
+	<section id="1" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-9">Tipos de alojamiento</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://wiki.montera34.com/como-se-concentra-la-oferta-por-barrios-de-airbnb">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/numeroteca/airbnbnavarra/blob/master/data/original/171002_airbnb_apartments-navarra_datahippo.csv">Datos octubre 2017</a> (738 anuncios)</small></div>
+			</div>
+		</header>
+		<div class="row vis-body bigspacetop">
+			<div class="col-md-4">
+				<p class="vis-featured"><span class="vis-big">En Pamplona-Iruña hay 738 alojamientos anunciados en Airbnb.</span></p>
+			</div>
+			<div class="col-md-4">
+				<p class="vis-featured"><span class="vis-big">el 43% son viviendas completas,<br>el 51% habitaciones completas,<br>el 6% habitaciones compartidas</span></p>
+			</div>
+			<div class="col-md-4">
+				<p>Esta sección muestra la cantidad de alojamientos de Airbnb en Pamplona-Iruña por tipo. <strong>Aproximadamente un 40% son viviendas completas, el resto habitaciones.</strong></p>
+			</div>
+		</div>
+		<div class="row vis-body">
+			<div class="col-md-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://skotperez.carto.com/builder/59f575ff-599c-492c-8809-934da8739f94/embed"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="2" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-9">Alojamientos por barrio</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://wiki.montera34.com/como-se-concentra-la-oferta-por-barrios-de-airbnb">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/numeroteca/airbnbnavarra/blob/master/data/original/171002_airbnb_apartments-navarra_datahippo.csv">Datos octubre 2017</a> (738 anuncios)</small></div>
+			</div>
+		</header>
+		<div class="row vis-body bigspacetop">
+			<h3 class="col-md-8">Distribución</h3>
+			<div class="col-md-6">
+				<p class="vis-featured"><span class="vis-big">El 33% de los alojamientos de Airbnb en Pamplona-Iruña están en el Casco Viejo (245 anuncios) y supone un 42% de las plazas (1.168).</span></p>
+			</div>
+			<div class="col-md-5">
+				<p>Entre el Casco Viejo y el Ensanche se localizan el 50% de la oferta total de alojamientos con 369 anuncios y el 58% de las plazas (1.601). Los sigue Milagrosa con un 9% (68 alojamientos). El porcentaje de cada uno del resto de los barrios oscila entre un 2% y un 6%.</p>
+			</div>
+		</div>
+		<div class="row vis-body">
+			<h3 class="col-md-12">Densidad</h3>
+			<div class="col-md-9">
+				<p><img class="img-responsive" src="images/pamplona.alojamientos.vivienda.barrio.cartograma.png" /></p>
+				<p><img class="img-responsive" src="images/pamplona.alojamientos.barrio.ratio.mapa.png" /></p>
+			</div>
+			<div class="col-md-3">
+				<p>En este cartograma cada barrio está representado por un cuadrado: su área representa la cantidad de viviendas que hay en él y el color es más o menos intenso dependiendo del porcentaje de anuncios de Airbnb que hay respecto al número de viviendas. De este modo evitamos uno de los problemas típicos de muchos mapas que sobrerepresentan a regiones que son poco relevantes pero que son muy extensas.</p>
+				<p>En él se aprecia como los barrios del Casco Viejo, Ensanche y Milagrosa son los que más densidad de alojamientos Airbnb tienen.</p>
+				<p class="bigspacetop vis-featured"><span class="vis-big">El barrio más congestionado es el Casco Viejo con  3,7 alojamientos de Airbnb por cada 100 viviendas.</span></p>
+				<p class="bigspacetop">Para estudiar cómo se distribuye la oferta de Airbnb en ciudad vamos a estudiarla en relación al total de viviendas por cada barrio. En vez de mostrar y representar los números totales de anuncios de Airbnb por barrio mostramos los valores relativos respecto el total de viviendas. Esto nos permite comparar con un valor barrios de muy distintas características y densidades de viviendas.</p>
+				<p>Después del Casco Viejo estaría el Ensanche con 1,2 alojamientos por cada 100 viviendas, seguido por el barrio de La Milagrosa con 0,8 alojamientos. La densidad de alojamientos respecto a las viviendas en el resto de los barrios se encuentra entre un 0,4 y un 0,6.</p>
+				<p>En este mapa se muestran delimitados cada uno de los barrios. Mediante una degradación de colores se muestra la densidad de alojamientos por viviendas de cada barrio.</p>
+			</div>
+		</div>
+		<div class="row vis-body">
+			<div class="col-md-6 col-md-offset-1">
+				<img class="img-responsive" src="images/pamplona.alojamientos.vivienda.barrio.barras.png" /></p>
+			</div>
+		</div>
+	</section>
+	<section id="3" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-9">Hoteles, hostales, albergues vs. Airbnb</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-est%C3%A1-repartida-la-propiedad-de-los-pisos-de-Airbnb%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/numeroteca/airbnbnavarra/blob/master/data/original/171002_airbnb_apartments-navarra_datahippo.csv">Datos octubre 2017</a> (738 anuncios)</small></div>
+			</div>
+		</header>
+		<div class="row vis-body">
+			<div class="col-md-6">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://orekari.carto.com/builder/e91fee3a-c442-43dd-b5b9-c33d84c82776/embed"></iframe>
+				</div>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://orekari.carto.com/builder/961a0eda-0f7c-4a90-a018-a2110a78cf07/embed"></iframe>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section id="4" class="vis-item">
+		<header class="row vis-head">
+			<h2 class="col-md-9">Concentración de alojamientos por anfitrión</h2>
+			<div class="col-md-3 vis-doc">
+				<div class="text-right"><a class="vis-btn" href="https://github.com/montera34/airbnbeuskadi/wiki/%C2%BFC%C3%B3mo-est%C3%A1-repartida-la-propiedad-de-los-pisos-de-Airbnb%3F">Documentación y metodología</a><br><small class="vis-src"><a href="https://github.com/numeroteca/airbnbnavarra/blob/master/data/original/171002_airbnb_apartments-navarra_datahippo.csv">Datos octubre 2017</a> (738 anuncios)</small></div>
+			</div>
+		</header>
+		<div class="row vis-body">
+			<div class="col-md-6">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://orekari.carto.com/builder/e91fee3a-c442-43dd-b5b9-c33d84c82776/embed"></iframe>
+				</div>
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://orekari.carto.com/builder/961a0eda-0f7c-4a90-a018-a2110a78cf07/embed"></iframe>
+				</div>
+			</div>
+
+		</div>
+	</section>
 
 </main>
 
