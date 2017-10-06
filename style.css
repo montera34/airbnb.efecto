@@ -63,7 +63,9 @@ h1 {
 .top-summerlab17 {
 	background-image: url(summerlab17/images/top.bg.2.jpg);
 }
-.intro figure {
+.top-pamplona {
+	background-image: url(pamplona/images/airbnb-pamplona-cabecera.png);
+}.intro figure {
 	margin-bottom: 1em;
 }
 .vis-item {
@@ -125,6 +127,21 @@ h1 {
 }
 .vis-gradient-4 {
 	background-color: #084594;
+}
+.vis-gradient-green-1 {
+	background-color: #0D585F;
+}
+.vis-gradient-green-2 {
+	background-color: #337F7F;
+}
+.vis-gradient-green-3 {
+	background-color: #63A6A0;
+}
+.vis-gradient-green-4 {
+	background-color: #9CCDC1;
+}
+.vis-gradient-green-5 {
+	background-color: #E4F1E1;
 }
 
 figcaption {
