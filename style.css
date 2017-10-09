@@ -101,6 +101,7 @@ h1 {
 	color: #bbb;
 	padding-top: 7px;
 	margin-top: 25px;
+	clear: both;
 }
 .vis-featured {
 	background-color: #fd5;
@@ -153,4 +154,23 @@ figcaption {
 	background-color: #f5f5f5;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+.user-card {
+	margin-bottom: 10px;
+	width: 100%;
+	clear: both;
+	float: left;
+}
+.user-card-img {
+	float: left;
+	width: 64px;
+	height: auto;
+}
+.user-card-data {
+	float: left;
+	margin-left: 10px;
+}
+.user-card-data h4 {
+	margin-top: 0;
 }
