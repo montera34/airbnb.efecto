@@ -45,16 +45,15 @@
 			<ul class="nav navbar-nav nabvar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizaciones <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#tipo-alojamiento">Tipo de alojamiento</a></li>
-						<li><a href="#barrios">Alojamientos por barrios</a></li>
-						<li><a href="#hoteles">Hoteles, hostales, albergues vs. Airbnb</a></li>
-						<li><a href="#anfitriones">Concentración por anfitrión</a></li>
+						<li><a href="#barras">Diagrama de barras</a></li>
+						<li><a href="#tabla">Ranking en tabla</a></li>
 					</ul>
 				</li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  href="#">Otros territorios <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="donostia">Donostia</a></li>
-						<li><a href="euskadi">Euskadi</a></li>
+						<li><a href="../donostia">Donostia</a></li>
+						<li><a href="../euskadi">Euskadi</a></li>
+						<li><a href="../pamplona">Pamplona</a></li>
 					</ul>
 				</li>
 				<li><a href="https://wiki.montera34.com">Wiki</a></li>
@@ -66,7 +65,7 @@
 
 <main class="container">
 
-	<section id="0" class="vis-item">
+	<section class="vis-item">
 		<header class="row vis-head">
 			<h2 class="col-md-9">Ranking de barrios de Efecto Airbnb</h2>
 			<div class="col-md-3 vis-doc">
@@ -76,12 +75,12 @@
 		</header>
 		<div class="row vis-body">
 			<div class="col-md-9">
-				<h3>Comparativa gráfica: alojamientos de Airbnb por cada 100 vivivendas en Donostia, Bilbao, Pamplona y Vitoria</h3>
+				<h3 id="barras">Comparativa gráfica: alojamientos de Airbnb por cada 100 vivivendas en Donostia, Bilbao, Pamplona y Vitoria</h3>
 				<p>La heterogeneidad con la que se distribuye la presencia de alojamientos de Airbnb en cualquier ciudad hace más adecuado realizar su estudio basándose en una unidad de medida menor: el barrio. Los ciudadanos suelen conocer su ubicación y dimensiones.</p>
 				<figure><a href="images/comparativa-barrios-donostia-bilbao-pamplona-vitoria_airbnb.png"><img class="img-responsive" src="images/comparativa-barrios-donostia-bilbao-pamplona-vitoria_airbnb.png" /></figure></a>
 					<figcaption>Barrios de Donostia, Bilbao, Pamplona y Vitoria ordenados por el ratio alojamientos Airbnb por cada 100 viviendas censadas.</figcaption>
 				</figure>
-				<h3>Explora los datos</h2>
+				<h3 id="tabla">Explora los datos</h2>
 				<div id="users">
 					<p>Ordena por 
 						<button class="sort" data-sort="barrio">
