@@ -3,12 +3,12 @@
   display:inline-block;
   color:#fff;
   text-decoration: none;
-  background-color: #28a8e0;
+  background-color: #aaa;
   height:30px;
 }
 .sort:hover {
   text-decoration: none;
-  background-color:#1b8aba;
+  background-color:#aaa;
 }
 .sort:focus {
   outline:none;
@@ -49,4 +49,25 @@
 }
 .viviendas, .ads, .ratio-alojamientos {
 	text-align:right;
+}
+.ratio-alojamientos {
+	font-weight:bold;
+}
+
+.donostia {
+	background-color:#4199cb;
+	border: 4px white solid;
+}
+.bilbao {
+	background-color:#da5455;
+	border: 4px white solid;
+	
+}
+.vitoria {
+	background-color:#5cd79b;
+	border: 4px white solid;
+}
+.pamplona {
+	background-color:#c076c0;
+	border: 4px white solid;
 }
