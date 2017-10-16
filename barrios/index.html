@@ -5,7 +5,7 @@
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Comparativa de barrios. Efecto Airbnb</title>
+<title>Efecto Airbnb en barrios</title>
 
 <!-- Fonts -->
 <link href="../fonts/style.css" rel="stylesheet">
@@ -19,11 +19,30 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+<!-- generic meta -->
+<meta content="Montera34" name="author" />
+<meta content="Efecto Airbnb en barrios" name="description" />
+<meta content="efecto airbnb, barrios, econonomía colaborativa, visualización de datos, opendata, datos abiertos, airbnb, turismo, turistificación, data commons, Pamplona-Iruña, Vitoria, Donostia, San Sebastián, Bilbao" name="keywords" />
+<!-- facebook meta -->
+<meta property="og:title" content="Efecto Airbnb en barrios" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Datos y ranking del impacto de Airbnb en los barrios." />
+<meta name="og:image" content="https://lab.montera34.com/airbnb/barrios/images/171014_top-20-barrios-capitales-euskadi-pamplona.png" />
+<meta property="og:url" content="https://lab.montera34.com/airbnb/barrios/" /> 
+<!-- twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@montera34">
+<meta property="twitter:site:id" content="137677992" />
+<meta name="twitter:title" content="Efecto Airbnb en barrios" />
+<meta name="twitter:description" content="Datos y ranking del impacto de Airbnb en los barrios." />
+<meta name="twitter:creator" content="@montera34">
+<meta name="twitter:image" content="https://lab.montera34.com/airbnb/barrios/images/171014_top-20-barrios-capitales-euskadi-pamplona.png" />
+
 <link href="style.css" rel="stylesheet">
 <link href="../style.css" rel="stylesheet">
 
-<link type="../image/x-icon" href="favicon.ico" rel="shortcut icon" />
-<link type="../image/png" sizes="256x256" href="favicon.png" rel="icon" />
+<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon" />
+<link type="image/png" sizes="256x256" href="../favicon.png" rel="icon" />
 
 </head> 
 
@@ -67,7 +86,7 @@
 
 	<section class="vis-item">
 		<header class="row vis-head">
-			<h2 class="col-md-9">Ranking de barrios de Efecto Airbnb</h2>
+			<h2 class="col-md-9">Efecto Airbnb en barrios</h2>
 			<div class="col-md-3 vis-doc">
 				<div class="text-right"><a class="vis-btn" href="https://wiki.montera34.com/como-se-concentra-la-oferta-por-barrios-de-airbnb">Documentación y metodología</a><br><small class="vis-src">Datos 14 octubre 2017 <a href="https://github.com/numeroteca/airbnbeuskadi/blob/master/data/original/171014_ads-airbnb-euskadi-datahippo.csv">Euskadi</a> y <a href="https://github.com/numeroteca/airbnbnavarra/blob/master/data/original/171014_airbnb_ads-navarra_datahippo.csv">Navarra</a></small>
 				</div>
@@ -98,8 +117,9 @@
 						<button class="sort" data-sort="ratio-alojamientos">
 							Alojamientos Airbnb / 100 viviendas
 						</button>
-
-						<br>  <input class="search" placeholder="Search" />
+					</p>
+					<p>
+						<input class="search" placeholder="Search" />
 					</p>
 					<table class="table table-condensed table-hover">
 						<thead>
@@ -108,7 +128,7 @@
 							<th class="ciudad" data-sort="ciudad">Municipio</th>
 							<th class="ads" data-sort="ads">Alojamientos<br>Airbnb</th>
 							<th class="viviendas" data-sort="viviendas">Número de<br>viviendas</th>
-							<th class="ratio-alojamientos" data-sort="ratio-alojamientos">ratio <br>alojamientos por cada<br>100 viviendas</th>
+							<th class="ratio-alojamientos" data-sort="ratio-alojamientos">Alojamientos Airbnb por<br>cada 100 viviendas</th>
 						</thead>
 					<tbody class="list">
 						<tr>
