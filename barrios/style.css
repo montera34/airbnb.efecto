@@ -71,3 +71,28 @@
 	background-color:#c076c0;
 	border: 4px white solid;
 }
+
+.bar:hover {
+	opacity:0.8;
+}
+
+#vis, #barchart{
+position: relative;	
+ top: 0px;
+    right: 0px;
+}
+
+.tooltip2 {
+  position: absolute;
+  background: white;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.yaxis line, .yaxis path {
+	display:none;
+}
+.yaxis {
+font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
