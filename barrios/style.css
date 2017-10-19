@@ -90,9 +90,12 @@ position: relative;
   border: 1px solid #ccc;
 }
 
-.yaxis line, .yaxis path {
+.yaxis line, .yaxis path, .xaxis path {
 	display:none;
 }
 .yaxis {
 font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.xaxis line{
+	stroke:#CCC;
 }
