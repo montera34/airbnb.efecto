@@ -975,19 +975,25 @@
 				<!-- load the d3.js library -->    	
 				<script src="../js/d3.v4.min.js"></script>
 				<script>
+				//Prepare canvas size
+				var isMobile = innerWidth < 768;
 
 				// set the dimensions and margins of the graph
 				// Margin convention: https://bl.ocks.org/mbostock/3019563
 				var screenwidth = d3.select("#vis").node().clientWidth;
+
 				var margin = {top: 50, right: 0, bottom: 30, left: screenwidth/1.8},
 						ratio = 4.5, // Height ratio
 						width = screenwidth - margin.left - margin.right, // Width depending on the div
-						height = width * ratio - margin.top - margin.bottom; // Height depending on the ratio
+						height = width * (isMobile ? (ratio+3) : ratio) - margin.top - margin.bottom; // Height depending on the ratio
 				// Margin for second plot
 				var margin2 = {top: margin.top, right: screenwidth/5.5, bottom: margin.bottom, left:0},
 						ratio2 = ratio, // Height ratio
 						width2 = screenwidth - width - margin2.left - margin2.right, // Width depending on the div
 						height2 = height; // Height depending on the ratio
+
+				var vis = d3.select("#vis"),
+				isMobile = innerWidth < 768;
 
 				// set the ranges
 				var y = d3.scaleBand()
@@ -1033,8 +1039,8 @@
 					y2.domain(data.map(function(d) { return d.barrio; }));
 					x2.domain([0, d3.max(data, function(d) { return d.ads; })]);
 
-					var xaxis1 = d3.axisTop(x).tickSize([height]).tickPadding([6])
-					var xaxis2 = d3.axisTop(x2).tickSize([height])
+					var xaxis1 = d3.axisTop(x).tickSize([height]).tickPadding([6]).ticks(isMobile ? 4 : 10)
+					var xaxis2 = d3.axisTop(x2).tickSize([height]).ticks(isMobile ? 4 : 12)
 					var yaxis1  = d3.axisLeft(y)
 					// add the x Axis
 					svg.append("g").attr("class", "xaxis")
@@ -1157,6 +1163,18 @@
 							}
 				});
 
+					svg.append("text").attr("x", -width2).attr("y", -20)
+						.text(isMobile ? "Alojam. Airbnb" : "Alojamientos Airbnb")
+						.style("text-anchor", "middle")
+						.attr("font-size", "12px")
+						.attr("fill", "black")
+						.attr("font-weight", "bold");
+					svg.append("text").attr("x", width/2).attr("y", -20)
+						.text(isMobile ? "Airbnbs/100 viviendas" : "Alojamientos Airbnb por cada 100 viviendas")
+						.style("text-anchor", "middle")
+						.attr("font-size", "12px")
+						.attr("fill", "black")
+						.attr("font-weight", "bold");
 				</script>
 			</div>
 		</div>
