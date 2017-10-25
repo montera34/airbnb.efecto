@@ -44,6 +44,11 @@ var svg = d3.select("#vis").append("svg")
 var tooltip = d3.select("body").append("div") 
 		.attr("class", "tooltip2")
 
+d3.selection.prototype.first = function() {
+  return d3.select(this[0][0]);
+};
+var tickLines = svg.selectAll('.xaxis2 .tick line');
+
 // get the data
 d3.tsv("barrios.tsv", function(error, data) {
 	if (error) throw error;
@@ -69,10 +74,19 @@ d3.tsv("barrios.tsv", function(error, data) {
 	svg.append("g").attr("class", "xaxis")
 			.attr("transform", "translate(0," + height + ")")
 			.call(xaxis1);
+	// removes first tick at 0
+	svg.selectAll('.xaxis .tick line').filter(function(d, i,list) {
+		  return i === 0;
+	}).attr('display', 'none');
+	
 	// add the x2 Axis
 	svg.append("g").attr("class", "xaxis2")
 			.attr("transform", "translate("+ (-width2-margin2.right) + "," + height2 + ")")
 			.call(xaxis2);
+	// removes first tick at 0
+	svg.selectAll('.xaxis2 .tick line').filter(function(d, i,list) {
+		  return i === 0;
+	}).attr('display', 'none');
 
 	// add the y Axis
 	svg.append("g").attr("class", "yaxis")
@@ -197,4 +211,4 @@ d3.tsv("barrios.tsv", function(error, data) {
 		.style("text-anchor", "middle")
 		.attr("font-size", "12px")
 		.attr("fill", "black")
-						.attr("font-weight", "bold");
+					.attr("font-weight", "bold");
