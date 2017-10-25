@@ -71,7 +71,10 @@
 	background-color:#c076c0;
 	border: 4px white solid;
 }
-
+.madrid {
+	background-color:#f6ae01;
+	border: 4px white solid;
+}
 .bar:hover {
 	opacity:0.8;
 }

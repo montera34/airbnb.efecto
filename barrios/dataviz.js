@@ -6,11 +6,11 @@ var isMobile = innerWidth < 768;
 var screenwidth = d3.select("#vis").node().clientWidth;
 
 var margin = {top: 50, right: 0, bottom: 30, left: screenwidth/1.8},
-		ratio = 4.5, // Height ratio
+		ratio = 9, // Height ratio
 		width = screenwidth - margin.left - margin.right, // Width depending on the div
-		height = width * (isMobile ? (ratio+3) : ratio) - margin.top - margin.bottom; // Height depending on the ratio
+		height = width * (isMobile ? (ratio*3) : ratio) - margin.top - margin.bottom; // Height depending on the ratio
 // Margin for second plot
-var margin2 = {top: margin.top, right: screenwidth/5.5, bottom: margin.bottom, left:0},
+var margin2 = {top: margin.top, right: screenwidth/5.5, bottom: margin.bottom, left:10},
 		ratio2 = ratio, // Height ratio
 		width2 = screenwidth - width - margin2.left - margin2.right, // Width depending on the div
 		height2 = height; // Height depending on the ratio
@@ -50,7 +50,7 @@ d3.selection.prototype.first = function() {
 var tickLines = svg.selectAll('.xaxis2 .tick line');
 
 // get the data
-d3.tsv("barrios.tsv", function(error, data) {
+d3.tsv("barrios-con-madrid.tsv", function(error, data) {
 	if (error) throw error;
 
 	// format the data
@@ -108,7 +108,7 @@ d3.tsv("barrios.tsv", function(error, data) {
 			.attr("height", y.bandwidth())
 			.attr("x", 0)
 			.attr("width", function(d) { return x(d.ads_ratio); })
-			.attr("fill", function(d) { return d.municipio == "Pamplona-Iruña" ? "#c076c0" : d.municipio == "Donostia / San Sebastián" ? "#4199cb" : d.municipio == "Bilbao" ? "#da5455" : "#5cd79b"; })
+			.attr("fill", function(d) { return d.municipio == "Pamplona-Iruña" ? "#c076c0" : d.municipio == "Donostia / San Sebastián" ? "#4199cb" : d.municipio == "Bilbao" ? "#da5455" : d.municipio == "Madrid" ? "#f6ae01" : "#5cd79b"; })
 			.on("mousemove", showTooltip) // AÑADIR EVENTO SHOW TOOLTIP
 			.on("mouseout", hideTooltip); // OCULTAR TOOLTIP
 
@@ -123,7 +123,7 @@ d3.tsv("barrios.tsv", function(error, data) {
 			//.attr("x", function(d) { return -x2(d.ads_ratio); })
 			.attr("x", function(d) { return -width2-margin2.right	+x2(d.ads); })
 			.attr("width",  function(d) { return width2-x2(d.ads); })
-			.attr("fill", function(d) { return d.municipio == "Pamplona-Iruña" ? "#c076c0" : d.municipio == "Donostia / San Sebastián" ? "#4199cb" : d.municipio == "Bilbao" ? "#da5455" : "#5cd79b"; })
+			.attr("fill", function(d) { return d.municipio == "Pamplona-Iruña" ? "#c076c0" : d.municipio == "Donostia / San Sebastián" ? "#4199cb" : d.municipio == "Bilbao" ? "#da5455" : d.municipio == "Madrid" ? "#f6ae01" : "#5cd79b"; })
 			.on("mousemove", showTooltip) // AÑADIR EVENTO SHOW TOOLTIP
 			.on("mouseout", hideTooltip); // OCULTAR TOOLTIP
 
