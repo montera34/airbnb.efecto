@@ -104,3 +104,6 @@ font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 	height:20px;
 	float:left;
 }
+line {
+	shape-rendering: crispEdges;
+}
