@@ -10,7 +10,7 @@ var margin = {top: 50, right: 0, bottom: 30, left: screenwidth/1.8},
 		width = screenwidth - margin.left - margin.right, // Width depending on the div
 		height = width * (isMobile ? (ratio*3) : ratio) - margin.top - margin.bottom; // Height depending on the ratio
 // Margin for second plot
-var margin2 = {top: margin.top, right: screenwidth/5.5, bottom: margin.bottom, left:10},
+var margin2 = {top: margin.top, right: screenwidth/5.5, bottom: margin.bottom, left:20},
 		ratio2 = ratio, // Height ratio
 		width2 = screenwidth - width - margin2.left - margin2.right, // Width depending on the div
 		height2 = height; // Height depending on the ratio
@@ -67,8 +67,8 @@ d3.tsv("barrios-con-madrid.tsv", function(error, data) {
 	y2.domain(data.map(function(d) { return d.barrio; }));
 	x2.domain([0, d3.max(data, function(d) { return d.ads; })]);
 
-	var xaxis1 = d3.axisTop(x).tickSize([height]).tickPadding([6]).ticks(isMobile ? 4 : 10)
-	var xaxis2 = d3.axisTop(x2).tickSize([height]).ticks(isMobile ? 4 : 12)
+	var xaxis1 = d3.axisTop(x).tickSize([height]).tickPadding([6]).ticks(isMobile ? 3 : 10)
+	var xaxis2 = d3.axisTop(x2).tickSize([height]).ticks(isMobile ? 3 : 8)
 	var yaxis1  = d3.axisLeft(y)
 	// add the x Axis
 	svg.append("g").attr("class", "xaxis")
