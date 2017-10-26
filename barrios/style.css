@@ -110,3 +110,7 @@ font-family: "Roboto Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
 line {
 	shape-rendering: crispEdges;
 }
+.legend-barrios p {
+	float:left;
+	margin-right:15px;
+}
