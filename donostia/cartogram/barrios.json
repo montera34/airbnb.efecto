@@ -24,7 +24,9 @@
                   "Shape_Area":2148304.08895,
                   "NUMPOINTS":46,
                   "totviviend":7250,
-                  "perc":0.0063
+                  "airbnb_per_vivienda_2017":0.0063,
+                  "ratio_vut_per_100viv_201809":0.15,
+                  "vut_201809":11
                },
                "arcs":[
                   [
@@ -50,7 +52,9 @@
                   "Shape_Area":1507618.11727,
                   "NUMPOINTS":749,
                   "totviviend":13905,
-                  "perc":0.0538
+                  "airbnb_per_vivienda_2017":0.0538,
+                  "ratio_vut_per_100viv_201809":4.29,
+                  "vut_201809":595
                },
                "arcs":[
                   [
@@ -77,7 +81,9 @@
                   "Shape_Area":2663806.71683,
                   "NUMPOINTS":71,
                   "totviviend":5886,
-                  "perc":0.012
+                  "airbnb_per_vivienda_2017":0.012,
+                  "ratio_vut_per_100viv_201809":0.34,
+                  "vut_201809":20
                },
                "arcs":[
                   [
@@ -104,7 +110,9 @@
                   "Shape_Area":4873507.46398,
                   "NUMPOINTS":7,
                   "totviviend":983,
-                  "perc":0.0071
+                  "airbnb_per_vivienda_2017":0.0071,
+                  "ratio_vut_per_100viv_201809":0.31,
+                  "vut_201809":3
                },
                "arcs":[
                   [
@@ -129,7 +137,9 @@
                   "Shape_Area":1445277.61106,
                   "NUMPOINTS":119,
                   "totviviend":14325,
-                  "perc":0.0083
+                  "airbnb_per_vivienda_2017":0.0083,
+                  "ratio_vut_per_100viv_201809":0.63,
+                  "vut_201809":90
                },
                "arcs":[
                   [
@@ -155,7 +165,9 @@
                   "Shape_Area":4423017.4444,
                   "NUMPOINTS":0,
                   "totviviend":8,
-                  "perc":0
+                  "airbnb_per_vivienda_2017":0,
+                  "ratio_vut_per_100viv_201809":0,
+                  "vut_201809":0
                },
                "arcs":[
                   [
@@ -177,7 +189,9 @@
                   "Shape_Area":4980864.10963,
                   "NUMPOINTS":21,
                   "totviviend":9057,
-                  "perc":0.0023
+                  "airbnb_per_vivienda_2017":0.0023,
+                  "ratio_vut_per_100viv_201809":0.04,
+                  "vut_201809":4
                },
                "arcs":[
                   [
@@ -203,7 +217,9 @@
                   "Shape_Area":545763.661527,
                   "NUMPOINTS":332,
                   "totviviend":10079,
-                  "perc":0.0329
+                  "airbnb_per_vivienda_2017":0.0329,
+                  "ratio_vut_per_100viv_201809":3.24,
+                  "vut_201809":326
                },
                "arcs":[
                   [
@@ -228,7 +244,9 @@
                   "Shape_Area":6909658.82287,
                   "NUMPOINTS":2,
                   "totviviend":154,
-                  "perc":0.0129
+                  "airbnb_per_vivienda_2017":0.0129,
+                  "ratio_vut_per_100viv_201809":0,
+                  "vut_201809":0
                },
                "arcs":[
                   [
@@ -249,31 +267,6 @@
                "type":"Polygon",
                "properties":{
                   "BAR_CL":42006900000300,
-                  "BAR_BARR":"015",
-                  "BAR_DS_O":"Miracruz-Bidebieta",
-                  "BAR_MUNI":"069",
-                  "BAR_MUNI_D":"Donostia / San Sebastián",
-                  "BAR_PROV":"20",
-                  "BAR_PROV_D":"Gipuzkoa",
-                  "Shape_Leng":10485.697904,
-                  "Shape_Area":1819392.92867,
-                  "NUMPOINTS":13,
-                  "totviviend":4027,
-                  "perc":0.0032
-               },
-               "arcs":[
-                  [
-                     -28,
-                     -2,
-                     -26,
-                     37
-                  ]
-               ]
-            },
-            {
-               "type":"Polygon",
-               "properties":{
-                  "BAR_CL":42006900000300,
                   "BAR_BARR":"010",
                   "BAR_DS_O":"Ibaeta",
                   "BAR_MUNI":"069",
@@ -284,7 +277,9 @@
                   "Shape_Area":3884803.76247,
                   "NUMPOINTS":36,
                   "totviviend":4198,
-                  "perc":0.0085
+                  "airbnb_per_vivienda_2017":0.0085,
+                  "ratio_vut_per_100viv_201809":0.67,
+                  "vut_201809":28
                },
                "arcs":[
                   [
@@ -310,7 +305,9 @@
                   "Shape_Area":1442575.89845,
                   "NUMPOINTS":7,
                   "totviviend":2162,
-                  "perc":0.0032
+                  "airbnb_per_vivienda_2017":0.0032,
+                  "ratio_vut_per_100viv_201809":0.33,
+                  "vut_201809":7
                },
                "arcs":[
                   [
@@ -337,7 +334,9 @@
                   "Shape_Area":1805673.24556,
                   "NUMPOINTS":158,
                   "totviviend":7522,
-                  "perc":0.021
+                  "airbnb_per_vivienda_2017":0.021,
+                  "ratio_vut_per_100viv_201809":1.44,
+                  "vut_201809":109
                },
                "arcs":[
                   [
@@ -363,7 +362,9 @@
                   "Shape_Area":4912798.179,
                   "NUMPOINTS":22,
                   "totviviend":614,
-                  "perc":0.0358
+                  "airbnb_per_vivienda_2017":0.0358,
+                  "ratio_vut_per_100viv_201809":1.31,
+                  "vut_201809":8
                },
                "arcs":[
                   [
@@ -390,7 +391,9 @@
                   "Shape_Area":3478781.25082,
                   "NUMPOINTS":2,
                   "totviviend":1306,
-                  "perc":0.0015
+                  "airbnb_per_vivienda_2017":0.0015,
+                  "ratio_vut_per_100viv_201809":0.15,
+                  "vut_201809":2
                },
                "arcs":[
                   [
@@ -415,7 +418,9 @@
                   "Shape_Area":1196727.76516,
                   "NUMPOINTS":110,
                   "totviviend":7109,
-                  "perc":0.0154
+                  "airbnb_per_vivienda_2017":0.0154,
+                  "ratio_vut_per_100viv_201809":0.90,
+                  "vut_201809":64
                },
                "arcs":[
                   [
@@ -433,7 +438,7 @@
                "properties":{
                   "BAR_CL":42006900000300,
                   "BAR_BARR":"006",
-                  "BAR_DS_O":"Ategorrieta-Ulia",
+                  "BAR_DS_O":"Ategorriet..",
                   "BAR_MUNI":"069",
                   "BAR_MUNI_D":"Donostia / San Sebastián",
                   "BAR_PROV":"20",
@@ -442,7 +447,9 @@
                   "Shape_Area":2804125.53741,
                   "NUMPOINTS":65,
                   "totviviend":1709,
-                  "perc":0.038
+                  "airbnb_per_vivienda_2017":0.038,
+                  "ratio_vut_per_100viv_201809":0.53,
+                  "vut_201809":53
                },
                "arcs":[
                   [
@@ -451,6 +458,33 @@
                      24,
                      25,
                      -1
+                  ]
+               ]
+            },
+            {
+               "type":"Polygon",
+               "properties":{
+                  "BAR_CL":42006900000300,
+                  "BAR_BARR":"015",
+                  "BAR_DS_O":"Miracruz.",
+                  "BAR_MUNI":"069",
+                  "BAR_MUNI_D":"Donostia / San Sebastián",
+                  "BAR_PROV":"20",
+                  "BAR_PROV_D":"Gipuzkoa",
+                  "Shape_Leng":10485.697904,
+                  "Shape_Area":1819392.92867,
+                  "NUMPOINTS":13,
+                  "totviviend":4027,
+                  "airbnb_per_vivienda_2017":0.0032,
+                  "ratio_vut_per_100viv_201809":0.17,
+                  "vut_201809":7
+               },
+               "arcs":[
+                  [
+                     -28,
+                     -2,
+                     -26,
+                     37
                   ]
                ]
             },
@@ -468,7 +502,9 @@
                   "Shape_Area":10159449.9691,
                   "NUMPOINTS":38,
                   "totviviend":496,
-                  "perc":0.0766
+                  "airbnb_per_vivienda_2017":0.0766,
+                  "ratio_vut_per_100viv_201809":1.41,
+                  "vut_201809":7
                },
                "arcs":[
                   [
