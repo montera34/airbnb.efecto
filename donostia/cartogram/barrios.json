@@ -22,11 +22,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":7208.867491,
                   "Shape_Area":2148304.08895,
-                  "NUMPOINTS":46,
+                  "airbnb_2017":46,
+                  "airbnb_201809":23,
                   "totviviend":7250,
                   "airbnb_per_vivienda_2017":0.0063,
                   "ratio_vut_per_100viv_201809":0.15,
-                  "vut_201809":11
+                  "vut_201809":11,
+                  "ratio_airbnb_201809":0.32
                },
                "arcs":[
                   [
@@ -50,11 +52,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":13839.498338,
                   "Shape_Area":1507618.11727,
-                  "NUMPOINTS":749,
+                  "airbnb_2017":749,
+                  "airbnb_201809":586,
                   "totviviend":13905,
                   "airbnb_per_vivienda_2017":0.0538,
                   "ratio_vut_per_100viv_201809":4.29,
-                  "vut_201809":595
+                  "vut_201809":595,
+                  "ratio_airbnb_201809":4.23
                },
                "arcs":[
                   [
@@ -79,11 +83,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":13759.540292,
                   "Shape_Area":2663806.71683,
-                  "NUMPOINTS":71,
+                  "airbnb_2017":71,
+                  "airbnb_201809":38,
                   "totviviend":5886,
                   "airbnb_per_vivienda_2017":0.012,
                   "ratio_vut_per_100viv_201809":0.34,
-                  "vut_201809":20
+                  "vut_201809":20,
+                  "ratio_airbnb_201809":0.65
                },
                "arcs":[
                   [
@@ -108,11 +114,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":11295.764196,
                   "Shape_Area":4873507.46398,
-                  "NUMPOINTS":7,
+                  "airbnb_2017":7,
+                  "airbnb_201809":4,
                   "totviviend":983,
                   "airbnb_per_vivienda_2017":0.0071,
                   "ratio_vut_per_100viv_201809":0.31,
-                  "vut_201809":3
+                  "vut_201809":3,
+                  "ratio_airbnb_201809":0.41
                },
                "arcs":[
                   [
@@ -135,11 +143,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":8098.228753,
                   "Shape_Area":1445277.61106,
-                  "NUMPOINTS":119,
+                  "airbnb_2017":119,
+                  "airbnb_201809":99,
                   "totviviend":14325,
                   "airbnb_per_vivienda_2017":0.0083,
                   "ratio_vut_per_100viv_201809":0.63,
-                  "vut_201809":90
+                  "vut_201809":90,
+                  "ratio_airbnb_201809":0.69
                },
                "arcs":[
                   [
@@ -163,11 +173,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":14889.323331,
                   "Shape_Area":4423017.4444,
-                  "NUMPOINTS":0,
+                  "airbnb_2017":0,
+                  "airbnb_201809":0,
                   "totviviend":8,
                   "airbnb_per_vivienda_2017":0,
                   "ratio_vut_per_100viv_201809":0,
-                  "vut_201809":0
+                  "vut_201809":0,
+                  "ratio_airbnb_201809":0
                },
                "arcs":[
                   [
@@ -187,11 +199,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":12736.407058,
                   "Shape_Area":4980864.10963,
-                  "NUMPOINTS":21,
+                  "airbnb_2017":21,
+                  "airbnb_201809":7,
                   "totviviend":9057,
                   "airbnb_per_vivienda_2017":0.0023,
                   "ratio_vut_per_100viv_201809":0.04,
-                  "vut_201809":4
+                  "vut_201809":4,
+                  "ratio_airbnb_201809":0.08
                },
                "arcs":[
                   [
@@ -215,11 +229,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":4743.863888,
                   "Shape_Area":545763.661527,
-                  "NUMPOINTS":332,
+                  "airbnb_2017":332,
+                  "airbnb_201809":271,
                   "totviviend":10079,
                   "airbnb_per_vivienda_2017":0.0329,
                   "ratio_vut_per_100viv_201809":3.24,
-                  "vut_201809":326
+                  "vut_201809":326,
+                  "ratio_airbnb_201809":2.69
                },
                "arcs":[
                   [
@@ -242,11 +258,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":18418.854671,
                   "Shape_Area":6909658.82287,
-                  "NUMPOINTS":2,
+                  "airbnb_2017":2,
+                  "airbnb_201809":2,
                   "totviviend":154,
                   "airbnb_per_vivienda_2017":0.0129,
                   "ratio_vut_per_100viv_201809":0,
-                  "vut_201809":0
+                  "vut_201809":0,
+                  "ratio_airbnb_201809":1.30
                },
                "arcs":[
                   [
@@ -275,11 +293,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":13195.929621,
                   "Shape_Area":3884803.76247,
-                  "NUMPOINTS":36,
+                  "airbnb_2017":36,
+                  "airbnb_201809":24,
                   "totviviend":4198,
                   "airbnb_per_vivienda_2017":0.0085,
                   "ratio_vut_per_100viv_201809":0.67,
-                  "vut_201809":28
+                  "vut_201809":28,
+                  "ratio_airbnb_201809":0.57
                },
                "arcs":[
                   [
@@ -303,11 +323,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":7464.30785,
                   "Shape_Area":1442575.89845,
-                  "NUMPOINTS":7,
+                  "airbnb_2017":7,
+                  "airbnb_201809":11,
                   "totviviend":2162,
                   "airbnb_per_vivienda_2017":0.0032,
                   "ratio_vut_per_100viv_201809":0.33,
-                  "vut_201809":7
+                  "vut_201809":7,
+                  "ratio_airbnb_201809":0.51
                },
                "arcs":[
                   [
@@ -332,11 +354,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":10404.387477,
                   "Shape_Area":1805673.24556,
-                  "NUMPOINTS":158,
+                  "airbnb_2017":158,
+                  "airbnb_201809":109,
                   "totviviend":7522,
                   "airbnb_per_vivienda_2017":0.021,
                   "ratio_vut_per_100viv_201809":1.44,
-                  "vut_201809":109
+                  "vut_201809":109,
+                  "ratio_airbnb_201809":1.45
                },
                "arcs":[
                   [
@@ -360,11 +384,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":12935.308791,
                   "Shape_Area":4912798.179,
-                  "NUMPOINTS":22,
+                  "airbnb_2017":22,
+                  "airbnb_201809":17,
                   "totviviend":614,
                   "airbnb_per_vivienda_2017":0.0358,
                   "ratio_vut_per_100viv_201809":1.31,
-                  "vut_201809":8
+                  "vut_201809":8,
+                  "ratio_airbnb_201809":2.79
                },
                "arcs":[
                   [
@@ -389,11 +415,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":13112.35109,
                   "Shape_Area":3478781.25082,
-                  "NUMPOINTS":2,
+                  "airbnb_2017":2,
+                  "airbnb_201809":3,
                   "totviviend":1306,
                   "airbnb_per_vivienda_2017":0.0015,
                   "ratio_vut_per_100viv_201809":0.15,
-                  "vut_201809":2
+                  "vut_201809":2,
+                  "ratio_airbnb_201809":0.23
                },
                "arcs":[
                   [
@@ -416,11 +444,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":6070.896519,
                   "Shape_Area":1196727.76516,
-                  "NUMPOINTS":110,
+                  "airbnb_2017":110,
+                  "airbnb_201809":89,
                   "totviviend":7109,
                   "airbnb_per_vivienda_2017":0.0154,
                   "ratio_vut_per_100viv_201809":0.90,
-                  "vut_201809":64
+                  "vut_201809":64,
+                  "ratio_airbnb_201809":1.25
                },
                "arcs":[
                   [
@@ -445,11 +475,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":13639.425624,
                   "Shape_Area":2804125.53741,
-                  "NUMPOINTS":65,
+                  "airbnb_2017":65,
+                  "airbnb_201809":51,
                   "totviviend":1709,
                   "airbnb_per_vivienda_2017":0.038,
                   "ratio_vut_per_100viv_201809":0.53,
-                  "vut_201809":53
+                  "vut_201809":53,
+                  "ratio_airbnb_201809":3.01
                },
                "arcs":[
                   [
@@ -473,11 +505,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":10485.697904,
                   "Shape_Area":1819392.92867,
-                  "NUMPOINTS":13,
+                  "airbnb_2017":13,
+                  "airbnb_201809":20,
                   "totviviend":4027,
                   "airbnb_per_vivienda_2017":0.0032,
                   "ratio_vut_per_100viv_201809":0.17,
-                  "vut_201809":7
+                  "vut_201809":7,
+                  "ratio_airbnb_201809":0.50
                },
                "arcs":[
                   [
@@ -500,11 +534,13 @@
                   "BAR_PROV_D":"Gipuzkoa",
                   "Shape_Leng":28680.071637,
                   "Shape_Area":10159449.9691,
-                  "NUMPOINTS":38,
+                  "airbnb_2017":38,
+                  "airbnb_201809":14,
                   "totviviend":496,
                   "airbnb_per_vivienda_2017":0.0766,
                   "ratio_vut_per_100viv_201809":1.41,
-                  "vut_201809":7
+                  "vut_201809":7,
+                  "ratio_airbnb_201809":2.83
                },
                "arcs":[
                   [

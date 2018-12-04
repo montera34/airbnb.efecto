@@ -17,7 +17,7 @@ body {
 
 .tooltip {
   position: absolute;
-  background: white;
+  background: rgba(255, 255, 255, .85);
   font-size: 14px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -28,7 +28,7 @@ rect:hover {
   stroke-width: 2px;
  }
  
-.Igeldo text{
+.Gros text, .Centro text{
 	fill:white !important;
 }
 .Miracruz-Bidebieta text{
@@ -36,6 +36,10 @@ rect:hover {
 }
 .Ategorrieta-Ulia rect{
  z-index:-1;
+}
+
+.domain {
+	display:none;
 }
 </style>
 <body>
@@ -63,14 +67,19 @@ var rectSize = d3.scaleSqrt()
 // Font size scale
 var fontSize = d3.scaleLinear()
     .range([8, 24])
+    
+// Position in x line
+// set the ranges
+var x = d3.scaleLinear()
+    .domain([0, 4.3])
+    .range([30,300])
 
 // Party
 var color = d3.scaleQuantile()
-    .domain([0, 0.0538])
+    .domain([0, 4.3])
     .range(['#F2FDFC','#C0D7ED','#A2B3E1','#848FD5','#656BC9','#4747BD','#2924B2'])
 
-console.log(color(0));
-
+//console.log(color(0));
 
 var svg = d3.select("body").append("svg")
     .attr("width", width)
@@ -79,6 +88,9 @@ var svg = d3.select("body").append("svg")
 var tooltip = d3.select("body")
     .append("div")
     .attr("class", "tooltip")
+
+var cartograma = svg.append('g').attr('id','cartograma');
+var escala = svg.append('g').attr('id','escala');
 
 d3.json("barrios.json", function(err, data) {
 
@@ -116,7 +128,7 @@ var path = d3.geoPath()
     for (var i = 0; i < 120; ++i) simulation.tick()
 
     // 5. Paint the cartogram
-    var rect = svg.selectAll("g")
+		var rect = cartograma.selectAll("g")
         .data(barrio)
         .enter()
         .append("g")
@@ -132,7 +144,7 @@ var path = d3.geoPath()
               .attr("height", d.area)
               .attr("x", -d.area / 2)
               .attr("y", -d.area / 2)
-              .attr("fill", color(d.properties.airbnb_per_vivienda_2017))
+              .attr("fill", color(d.properties.ratio_airbnb_201809))
               .attr("stroke", "#ccc")
               .attr("rx", 2)
           })
@@ -144,8 +156,17 @@ var path = d3.geoPath()
                 .attr("dy", 3)
                 .text(d.properties.BAR_DS_O)
                 .style("fill", "black")
-                //.style("font-size", fontSize(d.area) + "px")
-                .style("font-size", "11px")
+                .style("font-size", "13px");
+        })
+
+    rect.append("text")
+        .each(function(d) {
+            d3.select(this)
+                .attr("text-anchor", "middle")
+                .attr("dy", 23)
+                .text(d.properties.ratio_airbnb_201809 )
+                .style("fill", "black")
+                .style("font-size", "10px")
         })
 
       function showTooltip(d) {
@@ -153,17 +174,19 @@ var path = d3.geoPath()
           tooltip.html("<div class='tooltip-city'><strong>" + d.properties.BAR_DS_O + "</strong></div>" +
             "<table class='tooltip-table'>" +
                 "<tr class='first-row'>" +
-                    "<td><span class='table-n'>"+ d3.format(",.2f")(d.properties.airbnb_per_vivienda_2017) +"</span>%</td>" +
+                    "<td><span class='table-n'>"+ d3.format(",.2f")(d.properties.ratio_airbnb_201809) +"</span> anuncios Airbnb por cada 100 viviendas</td>" +
                 "</tr>" +
                 "<tr class='second-row'>" +
-                    "<td>" + d.properties.airbnb_2017 + " anuncios Airbnb</td>" +
+                    "<td>" + d.properties.airbnb_201809 + " anuncios Airbnb</td>" +
+                "</tr>" +
+                "<tr class='second-row'>" +
+                    "<td>" + d.properties.vut_201809 + " VUT</td>" +
                 "</tr>" +
                 "<tr class='third-row'>" +
                     "<td>" + d.properties.totviviend + " viviendas</td>" +
                 "</tr>" +
             "</table>")
             .style("opacity", 1)
-
           tooltip.style("left", (d3.event.pageX - 20) + "px")
           tooltip.style("top", (d3.event.pageY + 23) + "px")
         }
@@ -172,7 +195,50 @@ var path = d3.geoPath()
         // Hide tooltip
         tooltip.style("opacity", 0)
       }
+
+	// x scale
+  svg.append("g")
+      .attr("transform", "translate(0,125)")
+      .call(d3.axisBottom(x));
       
+    var vutLine = escala.selectAll("g")
+        .data(barrio)
+        .enter()
+        .append("g")
+        .attr("class", "barrioline")
+				.append("circle")
+        .each(function(d) {
+            d3.select(this)
+              .attr("r", 5)
+              .attr("cx", x(d.properties.ratio_airbnb_201809))
+              .attr("cy", function(d) { return Math.random() * 50 + 70;})
+              .attr("fill", color(d.properties.ratio_airbnb_201809))
+              .attr("stroke", "#000000")
+              //.attr("opacity","0.5")
+          })
+				.on("mousemove", showTooltip) // AÑADIR EVENTO SHOW TOOLTIP
+        .on("mouseout", hideTooltip) // OCULTAR TOOLTIP
+
+	escala.append("text")
+		.attr("y", 10)
+		.attr("x", 30)
+		.attr("dy", ".71em")
+		.attr("font-size","18")
+		.text("Anuncios Airbnb por cada 100 viviendas por barrios");
+		
+	escala.append("text")
+		.attr("y", 30)
+		.attr("x", 30)
+		.attr("dy", ".71em")
+		.attr("font-size","12")
+		.text("Anuncios Airbnb en Donostia. Septiembre 2018");
+		
+	escala.append("text")
+		.attr("y", 150)
+		.attr("x", 30)
+		.attr("dy", ".71em")
+		.attr("font-size","12")
+		.text("anunicios Airbnb por cada 100 viviendas");
 })
 
 // From http://bl.ocks.org/mbostock/4055889
@@ -200,3 +266,5 @@ function collide() {
   }
 }
 </script>
+<div id="cartograma"></div>
+</body>
